@@ -19,7 +19,6 @@ class NavBar extends Component {
         <NavDropdown.Item href="#2"> sub2 </NavDropdown.Item>
         <NavDropdown.Item href="#3"> sub3 </NavDropdown.Item>
       </NavDropdown>
-      <CartWidget />
     </Nav>
   </Navbar.Collapse>
 
