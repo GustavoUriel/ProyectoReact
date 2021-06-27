@@ -1,0 +1,26 @@
+.Nav-Style {
+  display: flex;
+  background-color: #512DA8;
+  color: #9575CD;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+#responsive-navbar-nav {
+  font-size: 20px;
+  justify-content: center;
+  width: 80vw;
+}
+
+.nav-link {
+  margin: 10px;
+}
+
+@media (max-width: 992px) {
+  .Nav-Style {
+    flex-direction: row-reverse;
+  }
+  .Logo-Brand, .navbar-toggler {
+    margin: 20px;
+  }
+}
