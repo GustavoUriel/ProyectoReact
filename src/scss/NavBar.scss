@@ -1,24 +1,21 @@
-@import './vars.scss';
-@import './generals';
+@import './_vars.scss';
+@import './_generals';
 
 .Nav-Style {
-    display: flex;
     background-color: $back_Dark;
     color: $back_Light;
-    flex-direction: column;
-    align-content: flex-start;
 }
 
 #responsive-navbar-nav{
     font-size: 20px;
     justify-content: center;
-    width: 80vw;
+    width:100% ;
 }
 
 .nav-link {
     margin: 10px;
 }
- 
+
 @media (max-width: 992px){
     .Nav-Style{
     flex-direction: row-reverse;

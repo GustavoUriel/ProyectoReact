@@ -1,9 +1,24 @@
-@import './vars.scss';
-@import './generals';
+@import './_vars.scss';
+@import './_generals';
 
 .App {
     text-align: center
 }
+
+
+.tituloSeparador {
+  text-align: center;
+  background-color: $back_Light;
+  color: $back_Dark;
+  width: 100%;
+  font-size: calc(8vmin);
+  height:calc(10px + 10vmin) ;
+  border: 2px solid chartreuse;
+
+  vertical-align: middle;
+}
+
+
 
 .App-logo {
   height: 40vmin;

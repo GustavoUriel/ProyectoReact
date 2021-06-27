@@ -1,3 +1,27 @@
-@import './vars.scss';
-@import './generals';
+@import './_vars.scss';
+@import './_generals';
 
+.header-base {
+display: inline-block;
+*display: inline;
+background-color: $back_Dark;
+color: $back_Light;
+}
+.header-logo{
+    display: inline-block;
+    *display: inline;    
+    width: 10%;
+    float: inline-start;
+}
+.header-menu{
+    display: inline-block;
+    *display: inline; 
+    width: 60%;
+
+}
+.header-widgetUser{
+    display: inline-block;
+    *display: inline;    
+    width: 20%;
+    float: inline;
+}

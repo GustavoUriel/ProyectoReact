@@ -9,7 +9,7 @@ function NavBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="Propuestas">
               <NavDropdown.Item href="#">Préstamos</NavDropdown.Item>
               <NavDropdown.Item href="#">Refinanciaciones</NavDropdown.Item>
@@ -21,9 +21,9 @@ function NavBar() {
               <NavDropdown.Divider />
               <NavDropdown.Item href="#">Planes para vivienda</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#deets">Nosotros</Nav.Link>
-            <Nav.Link href="#memes">Contanos algo</Nav.Link>
-            <Nav.Link href="#memes">Comparativas de sueldos</Nav.Link>
+            <Nav.Link href="/au">Nosotros</Nav.Link>
+            <Nav.Link href="#">Contanos algo</Nav.Link>
+            <Nav.Link href="#">Comparativas de sueldos</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar> 

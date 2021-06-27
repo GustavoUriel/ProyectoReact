@@ -1,0 +1,44 @@
+[
+    {
+        "id": 0,
+        "nombre": "Descubierto en CC$",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=Descubierto",
+        "description": "Tasa de interés aplicable al descubierto de una cuenta corriente en pesos"
+    },
+    {
+        "id": 1,
+        "nombre": "Saldo de Tarjeta VISA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=InterésMaster",
+        "description": "Tasa de interés aplicable al saldo impago del resumen de la tarjeta MasterCard"
+    },
+    {
+        "id": 2,
+        "nombre": "Saldo de Tarjeta Mastercard",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=InterésVisa",
+        "description": "Tasa de interés aplicable al saldo impago del resumen de la tarjeta Visa"
+    },
+    {
+        "id": 3,
+        "nombre": "Saldo de Tarjeta AMEX",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=Crédito",
+        "description": "Tasa de interés aplicable al momento de solicitar un crédito en pesos"
+    },
+    {
+        "id": 4,
+        "nombre": "Crédito a sola firma",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=Crédito",
+        "description": "Tasa de interés aplicable al momento de solicitar un crédito en pesos"
+    },
+    {
+        "id": 5,
+        "nombre": "Crédito para compras de inmuebles",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=Inmuebles",
+        "description": "Interés variable dependiente de la inflación"
+    },
+    {
+        "id": 6,
+        "nombre": "Financiación de compra de vehículos",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=Descubierto",
+        "description": "Tasa de interés aplicable al descubierto de una cuenta corriente en pesos"
+    }
+]

@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+.tituloSeparador {
+  text-align: center;
+  background-color: #9575CD;
+  color: #512DA8;
+  width: 100%;
+  font-size: calc(8vmin);
+  height: calc(10px + 10vmin);
+  border: 2px solid chartreuse;
+  vertical-align: middle;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

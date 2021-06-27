@@ -1,1 +1,26 @@
-/* No CSS */
+.header-base {
+  display: inline-block;
+  *display: inline;
+  background-color: #512DA8;
+  color: #9575CD;
+}
+
+.header-logo {
+  display: inline-block;
+  *display: inline;
+  width: 10%;
+  float: inline-start;
+}
+
+.header-menu {
+  display: inline-block;
+  *display: inline;
+  width: 60%;
+}
+
+.header-widgetUser {
+  display: inline-block;
+  *display: inline;
+  width: 20%;
+  float: inline;
+}

@@ -5,9 +5,9 @@ import { Button } from 'react-bootstrap';
 export default function WidgetUser() {
   return (
     <div>
-      <button class="btn btn-block nav-link btn-warning font-weight-bold" id="RegistrarseButton">
+      <Button class="btn btn-block nav-link btn-warning font-weight-bold" id="RegistrarseButton">
         Registrate...
-      </button>
+      </Button>
     </div>
 )
 }

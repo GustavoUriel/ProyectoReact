@@ -1,0 +1,702 @@
+[
+    {
+        "id": 0,
+        "idUser": 6,
+        "idProvider": 77,
+        "idType": 4,
+        "date": "23/10/2012"
+    },
+    {
+        "id": 1,
+        "idUser": 2,
+        "idProvider": 26,
+        "idType": 0,
+        "date": "20/2/2019"
+    },
+    {
+        "id": 2,
+        "idUser": 2,
+        "idProvider": 17,
+        "idType": 2,
+        "date": "18/6/2011"
+    },
+    {
+        "id": 3,
+        "idUser": 2,
+        "idProvider": 59,
+        "idType": 1,
+        "date": "26/12/2018"
+    },
+    {
+        "id": 4,
+        "idUser": 9,
+        "idProvider": 81,
+        "idType": 0,
+        "date": "16/11/2012"
+    },
+    {
+        "id": 5,
+        "idUser": 9,
+        "idProvider": 78,
+        "idType": 5,
+        "date": "9/6/2013"
+    },
+    {
+        "id": 6,
+        "idUser": 7,
+        "idProvider": 3,
+        "idType": 3,
+        "date": "20/8/2014"
+    },
+    {
+        "id": 7,
+        "idUser": 9,
+        "idProvider": 35,
+        "idType": 2,
+        "date": "2/9/2015"
+    },
+    {
+        "id": 8,
+        "idUser": 8,
+        "idProvider": 75,
+        "idType": 4,
+        "date": "1/11/2019"
+    },
+    {
+        "id": 9,
+        "idUser": 6,
+        "idProvider": 2,
+        "idType": 6,
+        "date": "14/7/2019"
+    },
+    {
+        "id": 10,
+        "idUser": 4,
+        "idProvider": 59,
+        "idType": 4,
+        "date": "7/2/2015"
+    },
+    {
+        "id": 11,
+        "idUser": 3,
+        "idProvider": 6,
+        "idType": 5,
+        "date": "4/6/2011"
+    },
+    {
+        "id": 12,
+        "idUser": 4,
+        "idProvider": 15,
+        "idType": 0,
+        "date": "29/3/2020"
+    },
+    {
+        "id": 13,
+        "idUser": 1,
+        "idProvider": 41,
+        "idType": 6,
+        "date": "24/2/2013"
+    },
+    {
+        "id": 14,
+        "idUser": 1,
+        "idProvider": 12,
+        "idType": 2,
+        "date": "23/8/2013"
+    },
+    {
+        "id": 15,
+        "idUser": 4,
+        "idProvider": 19,
+        "idType": 0,
+        "date": "12/6/2014"
+    },
+    {
+        "id": 16,
+        "idUser": 6,
+        "idProvider": 61,
+        "idType": 2,
+        "date": "21/4/2018"
+    },
+    {
+        "id": 17,
+        "idUser": 3,
+        "idProvider": 40,
+        "idType": 3,
+        "date": "2/8/2020"
+    },
+    {
+        "id": 18,
+        "idUser": 5,
+        "idProvider": 60,
+        "idType": 3,
+        "date": "2/7/2016"
+    },
+    {
+        "id": 19,
+        "idUser": 7,
+        "idProvider": 36,
+        "idType": 3,
+        "date": "11/1/2010"
+    },
+    {
+        "id": 20,
+        "idUser": 0,
+        "idProvider": 34,
+        "idType": 5,
+        "date": "31/1/2021"
+    },
+    {
+        "id": 21,
+        "idUser": 0,
+        "idProvider": 38,
+        "idType": 4,
+        "date": "23/11/2014"
+    },
+    {
+        "id": 22,
+        "idUser": 6,
+        "idProvider": 7,
+        "idType": 1,
+        "date": "5/5/2013"
+    },
+    {
+        "id": 23,
+        "idUser": 7,
+        "idProvider": 63,
+        "idType": 2,
+        "date": "30/3/2013"
+    },
+    {
+        "id": 24,
+        "idUser": 8,
+        "idProvider": 9,
+        "idType": 4,
+        "date": "5/8/2013"
+    },
+    {
+        "id": 25,
+        "idUser": 8,
+        "idProvider": 2,
+        "idType": 6,
+        "date": "11/8/2015"
+    },
+    {
+        "id": 26,
+        "idUser": 2,
+        "idProvider": 76,
+        "idType": 3,
+        "date": "10/3/2018"
+    },
+    {
+        "id": 27,
+        "idUser": 5,
+        "idProvider": 64,
+        "idType": 4,
+        "date": "8/1/2018"
+    },
+    {
+        "id": 28,
+        "idUser": 9,
+        "idProvider": 0,
+        "idType": 3,
+        "date": "26/8/2014"
+    },
+    {
+        "id": 29,
+        "idUser": 2,
+        "idProvider": 51,
+        "idType": 3,
+        "date": "20/4/2018"
+    },
+    {
+        "id": 30,
+        "idUser": 4,
+        "idProvider": 63,
+        "idType": 2,
+        "date": "7/5/2018"
+    },
+    {
+        "id": 31,
+        "idUser": 1,
+        "idProvider": 35,
+        "idType": 6,
+        "date": "12/8/2010"
+    },
+    {
+        "id": 32,
+        "idUser": 3,
+        "idProvider": 50,
+        "idType": 3,
+        "date": "27/11/2013"
+    },
+    {
+        "id": 33,
+        "idUser": 2,
+        "idProvider": 41,
+        "idType": 4,
+        "date": "4/6/2012"
+    },
+    {
+        "id": 34,
+        "idUser": 9,
+        "idProvider": 57,
+        "idType": 0,
+        "date": "17/1/2013"
+    },
+    {
+        "id": 35,
+        "idUser": 1,
+        "idProvider": 75,
+        "idType": 2,
+        "date": "30/4/2017"
+    },
+    {
+        "id": 36,
+        "idUser": 5,
+        "idProvider": 16,
+        "idType": 5,
+        "date": "6/8/2019"
+    },
+    {
+        "id": 37,
+        "idUser": 8,
+        "idProvider": 76,
+        "idType": 0,
+        "date": "25/11/2015"
+    },
+    {
+        "id": 38,
+        "idUser": 7,
+        "idProvider": 77,
+        "idType": 0,
+        "date": "4/3/2019"
+    },
+    {
+        "id": 39,
+        "idUser": 0,
+        "idProvider": 43,
+        "idType": 4,
+        "date": "13/8/2010"
+    },
+    {
+        "id": 40,
+        "idUser": 8,
+        "idProvider": 40,
+        "idType": 2,
+        "date": "17/3/2013"
+    },
+    {
+        "id": 41,
+        "idUser": 6,
+        "idProvider": 46,
+        "idType": 5,
+        "date": "11/8/2019"
+    },
+    {
+        "id": 42,
+        "idUser": 9,
+        "idProvider": 21,
+        "idType": 1,
+        "date": "13/8/2020"
+    },
+    {
+        "id": 43,
+        "idUser": 3,
+        "idProvider": 0,
+        "idType": 3,
+        "date": "22/1/2014"
+    },
+    {
+        "id": 44,
+        "idUser": 5,
+        "idProvider": 71,
+        "idType": 1,
+        "date": "2/10/2017"
+    },
+    {
+        "id": 45,
+        "idUser": 0,
+        "idProvider": 68,
+        "idType": 5,
+        "date": "29/11/2016"
+    },
+    {
+        "id": 46,
+        "idUser": 4,
+        "idProvider": 2,
+        "idType": 2,
+        "date": "15/6/2014"
+    },
+    {
+        "id": 47,
+        "idUser": 0,
+        "idProvider": 21,
+        "idType": 1,
+        "date": "23/4/2016"
+    },
+    {
+        "id": 48,
+        "idUser": 3,
+        "idProvider": 70,
+        "idType": 0,
+        "date": "9/4/2017"
+    },
+    {
+        "id": 49,
+        "idUser": 9,
+        "idProvider": 32,
+        "idType": 4,
+        "date": "10/9/2019"
+    },
+    {
+        "id": 50,
+        "idUser": 7,
+        "idProvider": 29,
+        "idType": 1,
+        "date": "8/2/2015"
+    },
+    {
+        "id": 51,
+        "idUser": 7,
+        "idProvider": 58,
+        "idType": 3,
+        "date": "25/6/2019"
+    },
+    {
+        "id": 52,
+        "idUser": 8,
+        "idProvider": 17,
+        "idType": 2,
+        "date": "9/1/2021"
+    },
+    {
+        "id": 53,
+        "idUser": 2,
+        "idProvider": 1,
+        "idType": 0,
+        "date": "28/9/2011"
+    },
+    {
+        "id": 54,
+        "idUser": 8,
+        "idProvider": 12,
+        "idType": 4,
+        "date": "10/1/2014"
+    },
+    {
+        "id": 55,
+        "idUser": 6,
+        "idProvider": 40,
+        "idType": 4,
+        "date": "7/11/2016"
+    },
+    {
+        "id": 56,
+        "idUser": 9,
+        "idProvider": 25,
+        "idType": 6,
+        "date": "27/10/2010"
+    },
+    {
+        "id": 57,
+        "idUser": 0,
+        "idProvider": 26,
+        "idType": 4,
+        "date": "7/4/2018"
+    },
+    {
+        "id": 58,
+        "idUser": 3,
+        "idProvider": 32,
+        "idType": 1,
+        "date": "22/6/2017"
+    },
+    {
+        "id": 59,
+        "idUser": 0,
+        "idProvider": 68,
+        "idType": 4,
+        "date": "3/7/2013"
+    },
+    {
+        "id": 60,
+        "idUser": 5,
+        "idProvider": 28,
+        "idType": 5,
+        "date": "10/7/2018"
+    },
+    {
+        "id": 61,
+        "idUser": 1,
+        "idProvider": 28,
+        "idType": 4,
+        "date": "17/8/2017"
+    },
+    {
+        "id": 62,
+        "idUser": 6,
+        "idProvider": 44,
+        "idType": 1,
+        "date": "13/12/2012"
+    },
+    {
+        "id": 63,
+        "idUser": 6,
+        "idProvider": 67,
+        "idType": 5,
+        "date": "26/11/2012"
+    },
+    {
+        "id": 64,
+        "idUser": 9,
+        "idProvider": 25,
+        "idType": 2,
+        "date": "23/8/2020"
+    },
+    {
+        "id": 65,
+        "idUser": 5,
+        "idProvider": 77,
+        "idType": 4,
+        "date": "26/2/2013"
+    },
+    {
+        "id": 66,
+        "idUser": 7,
+        "idProvider": 69,
+        "idType": 5,
+        "date": "17/2/2014"
+    },
+    {
+        "id": 67,
+        "idUser": 1,
+        "idProvider": 14,
+        "idType": 4,
+        "date": "23/7/2014"
+    },
+    {
+        "id": 68,
+        "idUser": 4,
+        "idProvider": 18,
+        "idType": 2,
+        "date": "7/3/2018"
+    },
+    {
+        "id": 69,
+        "idUser": 8,
+        "idProvider": 26,
+        "idType": 6,
+        "date": "25/1/2019"
+    },
+    {
+        "id": 70,
+        "idUser": 6,
+        "idProvider": 43,
+        "idType": 6,
+        "date": "31/5/2020"
+    },
+    {
+        "id": 71,
+        "idUser": 1,
+        "idProvider": 38,
+        "idType": 4,
+        "date": "18/10/2015"
+    },
+    {
+        "id": 72,
+        "idUser": 9,
+        "idProvider": 73,
+        "idType": 2,
+        "date": "22/11/2015"
+    },
+    {
+        "id": 73,
+        "idUser": 2,
+        "idProvider": 8,
+        "idType": 4,
+        "date": "18/6/2018"
+    },
+    {
+        "id": 74,
+        "idUser": 7,
+        "idProvider": 50,
+        "idType": 4,
+        "date": "15/11/2011"
+    },
+    {
+        "id": 75,
+        "idUser": 7,
+        "idProvider": 6,
+        "idType": 5,
+        "date": "13/2/2014"
+    },
+    {
+        "id": 76,
+        "idUser": 4,
+        "idProvider": 75,
+        "idType": 0,
+        "date": "26/7/2011"
+    },
+    {
+        "id": 77,
+        "idUser": 2,
+        "idProvider": 37,
+        "idType": 6,
+        "date": "25/11/2020"
+    },
+    {
+        "id": 78,
+        "idUser": 7,
+        "idProvider": 70,
+        "idType": 3,
+        "date": "29/11/2013"
+    },
+    {
+        "id": 79,
+        "idUser": 2,
+        "idProvider": 23,
+        "idType": 1,
+        "date": "2/6/2014"
+    },
+    {
+        "id": 80,
+        "idUser": 0,
+        "idProvider": 54,
+        "idType": 5,
+        "date": "9/1/2021"
+    },
+    {
+        "id": 81,
+        "idUser": 3,
+        "idProvider": 44,
+        "idType": 5,
+        "date": "26/5/2011"
+    },
+    {
+        "id": 82,
+        "idUser": 8,
+        "idProvider": 3,
+        "idType": 6,
+        "date": "24/6/2016"
+    },
+    {
+        "id": 83,
+        "idUser": 9,
+        "idProvider": 79,
+        "idType": 1,
+        "date": "11/1/2013"
+    },
+    {
+        "id": 84,
+        "idUser": 5,
+        "idProvider": 2,
+        "idType": 5,
+        "date": "22/7/2013"
+    },
+    {
+        "id": 85,
+        "idUser": 9,
+        "idProvider": 24,
+        "idType": 1,
+        "date": "1/5/2011"
+    },
+    {
+        "id": 86,
+        "idUser": 5,
+        "idProvider": 15,
+        "idType": 6,
+        "date": "8/8/2020"
+    },
+    {
+        "id": 87,
+        "idUser": 6,
+        "idProvider": 58,
+        "idType": 2,
+        "date": "31/10/2019"
+    },
+    {
+        "id": 88,
+        "idUser": 7,
+        "idProvider": 19,
+        "idType": 3,
+        "date": "26/11/2012"
+    },
+    {
+        "id": 89,
+        "idUser": 4,
+        "idProvider": 12,
+        "idType": 1,
+        "date": "27/5/2018"
+    },
+    {
+        "id": 90,
+        "idUser": 9,
+        "idProvider": 6,
+        "idType": 5,
+        "date": "10/5/2015"
+    },
+    {
+        "id": 91,
+        "idUser": 9,
+        "idProvider": 66,
+        "idType": 3,
+        "date": "4/7/2018"
+    },
+    {
+        "id": 92,
+        "idUser": 7,
+        "idProvider": 69,
+        "idType": 5,
+        "date": "15/3/2011"
+    },
+    {
+        "id": 93,
+        "idUser": 3,
+        "idProvider": 52,
+        "idType": 5,
+        "date": "14/6/2016"
+    },
+    {
+        "id": 94,
+        "idUser": 4,
+        "idProvider": 46,
+        "idType": 1,
+        "date": "11/8/2015"
+    },
+    {
+        "id": 95,
+        "idUser": 9,
+        "idProvider": 72,
+        "idType": 3,
+        "date": "20/3/2019"
+    },
+    {
+        "id": 96,
+        "idUser": 9,
+        "idProvider": 23,
+        "idType": 1,
+        "date": "4/4/2010"
+    },
+    {
+        "id": 97,
+        "idUser": 3,
+        "idProvider": 76,
+        "idType": 5,
+        "date": "8/6/2015"
+    },
+    {
+        "id": 98,
+        "idUser": 6,
+        "idProvider": 73,
+        "idType": 0,
+        "date": "20/3/2015"
+    },
+    {
+        "id": 99,
+        "idUser": 0,
+        "idProvider": 0,
+        "idType": 3,
+        "date": "15/11/2020"
+    }
+]

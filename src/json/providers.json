@@ -1,0 +1,749 @@
+[
+    {
+        "id": 0,
+        "entity": "Yo te presté",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=YO",
+        "description": "Préstamos de amigo",
+        "phone": "800-123-9432",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 1,
+        "entity": "AFIP",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=AFIP",
+        "description": "AFIP Seti DJ",
+        "phone": "800-123-9432",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 2,
+        "entity": "AMERICA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=AMERICA",
+        "description": "BANK OF AMERICA NATIONAL ASSOCIATION",
+        "phone": "800-123-8824",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 3,
+        "entity": "BACS",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=BACS",
+        "description": "BACS BANCO DE CREDITO Y SECURITIZACION S.A.",
+        "phone": "800-123-3657",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 4,
+        "entity": "BBVA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=BBVA",
+        "description": "BANCO BBVA ARGENTINA S.A.",
+        "phone": "800-123-7476",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 5,
+        "entity": "BICA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=BICA",
+        "description": "BANCO BICA S.A.",
+        "phone": "800-123-6784",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 6,
+        "entity": "BRADESCO",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=BRADESCO",
+        "description": "BANCO BRADESCO ARGENTINA SA",
+        "phone": "800-123-7785",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 7,
+        "entity": "BRUBANK",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=BRUBANK",
+        "description": "BRUBANK S.A.U.",
+        "phone": "800-123-6752",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 8,
+        "entity": "PROVINCIA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=BUENOS AIRES",
+        "description": "BANCO DE LA PROVINCIA DE BUENOS AIRES",
+        "phone": "800-123-9081",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 9,
+        "entity": "CENTRAL",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=CENTRAL",
+        "description": "CENTRAL DE LA REPUBLICA ARGENTINA",
+        "phone": "800-123-7331",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 10,
+        "entity": "CETELEM",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=CETELEM",
+        "description": "BANCO CETELEM ARGENTINA S.A.",
+        "phone": "800-123-3802",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 11,
+        "entity": "CHACO",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=CHACO",
+        "description": "NUEVO BANCO DEL CHACO S.A.",
+        "phone": "800-123-7524",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 12,
+        "entity": "CHINA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=CHINA",
+        "description": "BANK OF CHINA LIMITED, SUCURSAL BUENOS AIRES",
+        "phone": "800-123-2227",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 13,
+        "entity": "CHUBUT",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=CHUBUT",
+        "description": "BANCO DEL CHUBUT S.A.",
+        "phone": "800-123-7186",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 14,
+        "entity": "CIENCIAS ECONOMICAS",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=CIENCIAS ECONOMICAS",
+        "description": "CONSEJO PROFESIONAL DE CIENCIAS ECONOMICAS DE CABA",
+        "phone": "800-123-8062",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 15,
+        "entity": "CITIBANK",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=CITIBANK",
+        "description": "CITIBANK N.A.",
+        "phone": "800-123-4275",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 16,
+        "entity": "CIUDAD",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=CIUDAD",
+        "description": "BANCO DE LA CIUDAD DE BUENOS AIRES",
+        "phone": "800-123-4070",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 17,
+        "entity": "CMF",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=CMF",
+        "description": "BANCO CMF S.A.",
+        "phone": "800-123-4791",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 18,
+        "entity": "COINAG",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=COINAG",
+        "description": "BANCO COINAG S.A.",
+        "phone": "800-123-6748",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 19,
+        "entity": "COLUMBIA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=COLUMBIA",
+        "description": "BANCO COLUMBIA S.A.",
+        "phone": "800-123-5801",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 20,
+        "entity": "COMAFI",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=COMAFI",
+        "description": "BANCO COMAFI S.A.",
+        "phone": "800-123-9043",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 21,
+        "entity": "COMERCIO",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=COMERCIO",
+        "description": "BANCO DE COMERCIO S.A.",
+        "phone": "800-123-6839",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 22,
+        "entity": "CORDIAL",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=CORDIAL",
+        "description": "CORDIAL COMPAÑIA FINANCIERA S.A.",
+        "phone": "800-123-7757",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 23,
+        "entity": "CORDOBA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=CORDOBA",
+        "description": "BANCO DE LA PROVINCIA DE CORDOBA S.A.",
+        "phone": "800-123-8895",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 24,
+        "entity": "CORRIENTES",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=CORRIENTES",
+        "description": "BANCO DE CORRIENTES S.A.",
+        "phone": "800-123-9298",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 25,
+        "entity": "CREDICOOP",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=CREDICOOP",
+        "description": "BANCO CREDICOOP COOPERATIVO LIMITADO",
+        "phone": "800-123-4021",
+        "hasCard": true,
+        "showOnCarousel": true
+    },
+    {
+        "id": 26,
+        "entity": "CREDITO REGIONAL",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=CREDITO REGIONAL",
+        "description": "CREDITO REGIONAL COMPAÑIA FINANCIERA S.A.",
+        "phone": "800-123-6679",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 27,
+        "entity": "DEL SOL",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=DEL SOL",
+        "description": "BANCO DEL SOL S.A.",
+        "phone": "800-123-2610",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 28,
+        "entity": "DINO",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=DINO",
+        "description": "BANCO DINO S.A.",
+        "phone": "800-123-8867",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 29,
+        "entity": "ENTRE RIOS",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=ENTRE RIOS",
+        "description": "NUEVO BANCO DE ENTRE RIOS S.A.",
+        "phone": "800-123-7128",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 30,
+        "entity": "FCA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=FCA",
+        "description": "FCA Compañía Financiera S.A.",
+        "phone": "800-123-8547",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 31,
+        "entity": "FINANCIERA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=FINANCIERA",
+        "description": "COMPAÑIA FINANCIERA ARGENTINA S.A.",
+        "phone": "800-123-7806",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 32,
+        "entity": "FORD",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=FORD",
+        "description": "FORD CREDIT CIA. FINAN. S.A.",
+        "phone": "800-123-8194",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 33,
+        "entity": "FORMOSA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=FORMOSA",
+        "description": "BANCO DE FORMOSA S.A.",
+        "phone": "800-123-1970",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 34,
+        "entity": "GALICIA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=GALICIA",
+        "description": "BANCO DE GALICIA Y BUENOS AIRES S.A.U.",
+        "phone": "800-123-5954",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 35,
+        "entity": "GPAT",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=GPAT",
+        "description": "GPAT COMPAÑIA FINANCIERA S.A.",
+        "phone": "800-123-5907",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 36,
+        "entity": "HIPOTECARIO",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=HIPOTECARIO",
+        "description": "BANCO HIPOTECARIO SA",
+        "phone": "800-123-6348",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 37,
+        "entity": "HSBC",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=HSBC",
+        "description": "HSBC BANK ARGENTINA S.A.",
+        "phone": "800-123-1275",
+        "hasCard": true,
+        "showOnCarousel": true
+    },
+    {
+        "id": 38,
+        "entity": "ICBC",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=ICBC",
+        "description": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ARGENTINA) S.A.",
+        "phone": "800-123-2070",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 39,
+        "entity": "INDUSTRIAL",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=INDUSTRIAL",
+        "description": "BANCO INDUSTRIAL S.A.",
+        "phone": "800-123-7586",
+        "hasCard": true,
+        "showOnCarousel": true
+    },
+    {
+        "id": 40,
+        "entity": "INTERFINANZAS",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=INTERFINANZAS",
+        "description": "BANCO INTERFINANZAS S.A.",
+        "phone": "800-123-5554",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 41,
+        "entity": "INVERSIÓN Y COMERCIO EXTERIOR",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=INVERSIÓN Y COMERCIO EXTERIOR",
+        "description": "BANCO DE INVERSION Y COMERCIO EXTERIOR S.A.",
+        "phone": "800-123-1778",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 42,
+        "entity": "ITAU",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=ITAU",
+        "description": "BANCO ITAU ARGENTINA S.A.",
+        "phone": "800-123-9024",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 43,
+        "entity": "JOHN DEERE",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=JOHN DEERE",
+        "description": "JOHN DEERE CREDIT CIA. FINAN. S.A.",
+        "phone": "800-123-7325",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 44,
+        "entity": "JULIO",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=JULIO",
+        "description": "BANCO JULIO S.A.",
+        "phone": "800-123-2776",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 45,
+        "entity": "LA PAMPA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=LA PAMPA",
+        "description": "BANCO DE LA PAMPA SOCIEDAD DE ECONOMIA MIXTA",
+        "phone": "800-123-7125",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 46,
+        "entity": "MACRO",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=MACRO",
+        "description": "BANCO MACRO S.A.",
+        "phone": "800-123-7015",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 47,
+        "entity": "MARIVA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=MARIVA",
+        "description": "BANCO MARIVA S.A.",
+        "phone": "800-123-9643",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 48,
+        "entity": "MAS VENTAS",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=MAS VENTAS",
+        "description": "MAS VENTAS S.A.",
+        "phone": "800-123-1181",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 49,
+        "entity": "MERCEDES-BENZ",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=MERCEDES-BENZ",
+        "description": "MERCEDES-BENZ COMPAÑIA FINANCIERA ARGENTINA S.A.",
+        "phone": "800-123-3034",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 50,
+        "entity": "MERIDIAN",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=MERIDIAN",
+        "description": "BANCO MERIDIAN S.A.",
+        "phone": "800-123-9940",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 51,
+        "entity": "MONTEMAR",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=MONTEMAR",
+        "description": "MONTEMAR CIA. FINAN. S.A.",
+        "phone": "800-123-6923",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 52,
+        "entity": "MORGAN",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=MORGAN",
+        "description": "JP MORGAN CHASE BANK NA (SUCURSAL BUENOS AIRES)",
+        "phone": "800-123-4294",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 53,
+        "entity": "NACION",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=NACIÓN",
+        "description": "BANCO DE LA NACION ARGENTINA",
+        "phone": "800-123-7044",
+        "hasCard": true,
+        "showOnCarousel": true
+    },
+    {
+        "id": 54,
+        "entity": "NEUQUEN",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=NEUQUEN",
+        "description": "BANCO PROVINCIA DEL NEUQUEN S.A.",
+        "phone": "800-123-2676",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 55,
+        "entity": "PARIBAS",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=PARIBAS",
+        "description": "BNP PARIBAS",
+        "phone": "800-123-1423",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 56,
+        "entity": "PATAGONIA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=PATAGONIA",
+        "description": "BANCO PATAGONIA S.A.",
+        "phone": "800-123-5273",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 57,
+        "entity": "PIANO",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=PIANO",
+        "description": "BANCO PIANO S.A.",
+        "phone": "800-123-8384",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 58,
+        "entity": "PROVINCANJE",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=PROVINCANJE",
+        "description": "PROVINCANJE SOCIEDAD ANONIMA",
+        "phone": "800-123-6917",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 59,
+        "entity": "PSA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=PSA",
+        "description": "PSA FINANCE ARGENTINA CIA. FINAN. S.A.",
+        "phone": "800-123-2082",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 60,
+        "entity": "RCI",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=RCI",
+        "description": "RCI BANQUE S.A.",
+        "phone": "800-123-3106",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 61,
+        "entity": "RIOJA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=RIOJA",
+        "description": "BANCO RIOJA SOCIEDAD ANÓNIMA UNIPERSONAL",
+        "phone": "800-123-7852",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 62,
+        "entity": "ROELA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=ROELA",
+        "description": "BANCO ROELA S.A.",
+        "phone": "800-123-8392",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 63,
+        "entity": "ROMBO",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=ROMBO",
+        "description": "ROMBO CIA. FINAN. S.A.",
+        "phone": "800-123-2440",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 64,
+        "entity": "ROSARIO",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=ROSARIO",
+        "description": "BANCO MUNICIPAL DE ROSARIO",
+        "phone": "800-123-8293",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 65,
+        "entity": "SAENZ",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=SAENZ",
+        "description": "BANCO SAENZ S.A.",
+        "phone": "800-123-9459",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 66,
+        "entity": "SAN JUAN",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=SAN JUAN",
+        "description": "BANCO DE SAN JUAN S.A.",
+        "phone": "800-123-6276",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 67,
+        "entity": "SANTA CRUZ",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=SANTA CRUZ",
+        "description": "BANCO DE SANTA CRUZ S.A.",
+        "phone": "800-123-6400",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 68,
+        "entity": "SANTA FE",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=SANTA FE",
+        "description": "NUEVO BANCO DE SANTA FE S.A.",
+        "phone": "800-123-5187",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 69,
+        "entity": "SANTANDER",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=SANTANDER",
+        "description": "BANCO SANTANDER RIO S.A.",
+        "phone": "800-123-3200",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 70,
+        "entity": "SANTIAGO DEL ESTERO",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=SANTIAGO DEL ESTERO",
+        "description": "BANCO DE SANTIAGO DEL ESTERO S.A.",
+        "phone": "800-123-4323",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 71,
+        "entity": "SERVICIOS FINANCIEROS",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=SERVICIOS FINANCIEROS",
+        "description": "BANCO DE SERVICIOS FINANCIEROS S.A.",
+        "phone": "800-123-1034",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 72,
+        "entity": "SERVICIOS Y TRANSACCIONES",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=SERVICIOS Y TRANSACCIONES",
+        "description": "BANCO DE SERVICIOS Y TRANSACCIONES S.A.",
+        "phone": "800-123-8640",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 73,
+        "entity": "SUCREDITO",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=SUCREDITO",
+        "description": "BANCO SUCREDITO S.A.",
+        "phone": "800-123-4614",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 74,
+        "entity": "SUPERVIELLE",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=SUPERVIELLE",
+        "description": "BANCO SUPERVIELLE S.A.",
+        "phone": "800-123-8552",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 75,
+        "entity": "TIERRA DEL FUEGO",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=TIERRA DEL FUEGO",
+        "description": "BANCO PROVINCIA DE TIERRA DEL FUEGO",
+        "phone": "800-123-8160",
+        "hasCard": true,
+        "showOnCarousel": false
+    },
+    {
+        "id": 76,
+        "entity": "TOYOTA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=TOYOTA",
+        "description": "TOYOTA COMPAÑIA FINANCIERA DE ARGENTINA S.A.",
+        "phone": "800-123-3798",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 77,
+        "entity": "TRANSATLANTICA",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=TRANSATLANTICA",
+        "description": "TRANSATLANTICA COMPAÑIA FINANCIERA S.A.",
+        "phone": "800-123-6215",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 78,
+        "entity": "URUGUAY",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=URUGUAY",
+        "description": "BANCO DE LA REP. ORIENTAL DEL URUGUAY",
+        "phone": "800-123-2733",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 79,
+        "entity": "VALORES",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=VALORES",
+        "description": "BANCO DE VALORES S.A.",
+        "phone": "800-123-4061",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 80,
+        "entity": "VOII",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=VOII",
+        "description": "BANCO VOII S.A.",
+        "phone": "800-123-8021",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 81,
+        "entity": "VOLKSWAGEN",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=VOLKSWAGEN",
+        "description": "VOLKSWAGEN FINANCIAL SERVICES COMPAÑIA FINANCIERA S.A.",
+        "phone": "800-123-3887",
+        "hasCard": false,
+        "showOnCarousel": false
+    },
+    {
+        "id": 82,
+        "entity": "WILOBANK",
+        "image": "https://dummyimage.com/300x300/9675cd/522da8.png&text=WILOBANK",
+        "description": "WILOBANK S.A.",
+        "phone": "800-123-2677",
+        "hasCard": true,
+        "showOnCarousel": false
+    }
+]
