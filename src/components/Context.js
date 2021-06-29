@@ -1510,7 +1510,7 @@ export  function Context ({ children})
         "nombre": "Uriel",
         "apellido": "Levcovich",
         "email": "glevcovich@outlook.com",
-        "contrasena": "codehouse",
+        "contrasena": "coderhouse",
         "provincia": "Santa Fe",
         "ciudad": "Santa Fe",
         "estadoCivil": 1,
