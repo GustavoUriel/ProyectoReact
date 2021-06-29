@@ -7,6 +7,36 @@ import { Card, Accordion, Button } from 'react-bootstrap';
 
 export default function AboutUs() {
   console.log (useParams())
+  const textos = [
+    {
+      'id':'0',
+      'grande': 'Padre de familia',
+      'chico': 'Principal función',
+      'ocultable': 'Mantenemos el orden y la estructura de una familia funcional. Siempre al servicio de la jefa y los pequeños jefes.',
+      'link': 'http://www.google.com'
+    },
+    {
+      'id':'1',
+      'grande': ' Servicios en oficinas',
+      'chico': 'Principal dedicación horaria',
+      'ocultable': 'Hacemos todo lo que pide el que paga el sueldo, con profesionalismo y buena actitud. Realización de complejos procedimientos legales y escritura de su documentación según los más altos estándares internacionales. Atención al cliente. Asesistencia a personas públicas en sus publicaciones.',
+      'link': 'http://www.yahoo.com'
+    },
+    {
+      'id':'2',
+      'grande': 'Estudios judaicos avanzados',
+      'chico': 'Doble turno',
+      'ocultable': 'Dedicación al estudio por vocación, textos en hebreo y arameo, en solitario y en grupo.',
+      'link': 'http://www.microsoft.com'
+    },
+    {
+      'id':'3',
+      'grande': 'Servicios de sistemas',
+      'chico': 'Casos puntuales',
+      'ocultable': 'Sólo para clientes que pagan bien, o para amigos.',
+      'link': 'http://www.es.reactjs.org'
+    },
+  ]
   return (
     <div id="seccionNosotros"> 
       <div className="col col-sm-6 ">
@@ -44,66 +74,29 @@ export default function AboutUs() {
         <div className="col-12">
           <h2 className="titulo-separador">Nuestras áreas de servicio (El acordeón de la vida)</h2>
           <Accordion>
+          {textos.map((i) => {
+          return (
             <Card>
               <Card.Header>
                 <h3 className="mb-0">
-                  <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                  Padre de familia<small> Principal función</small>
+                  <a href={i.link}>Si apretás acá te llevo a {i.link}</a>
+                  <Accordion.Toggle as={Button} variant="link" eventKey={i.id}>
+                    <small>Si apretás acá abro y cierro el acordeón</small>
+                    <h3>{i.grande}</h3>
+                    <small> {i.chico}</small>
                   </Accordion.Toggle>
                 </h3>
               </Card.Header>
-              <Accordion.Collapse eventKey="0">
+              <Accordion.Collapse eventKey={i.id}>
                 <Card.Body>
-                  <p className="">Mantenemos el orden y la estructura de una familia funcional. Siempre al servicio de la jefa y los pequeños jefes.</p>
+                  <p className=""> {i.ocultable} </p>
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
-            <Card>
-              <Card.Header>
-                <h3 className="mb-0">
-                  <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                  Servicios en oficinas<small> Principal dedicación horaria</small>
-                  </Accordion.Toggle>
-                </h3>
-              </Card.Header>
-              <Accordion.Collapse eventKey="1">
-                <Card.Body>
-                  <p>Hacemos todo lo que pide el que paga el sueldo, con profesionalismo y buena actitud. Realización de complejos procedimientos legales y escritura de su documentación según los más altos estándares internacionales. Atención al cliente. Asesistencia a personas públicas en sus publicaciones.</p>
-                </Card.Body>
-              </Accordion.Collapse>
-            </Card>
-            <Card>
-              <Card.Header>
-                <h3 className="mb-0">
-                  <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                  Estudios judaicos avanzados<small> Doble turno</small>
-                  </Accordion.Toggle>
-                </h3>
-              </Card.Header>
-              <Accordion.Collapse eventKey="2">
-                <Card.Body>
-                  <p>Dedicación al estudio por vocación, textos en hebreo y arameo, en solitario y en grupo.</p>
-                </Card.Body>
-              </Accordion.Collapse>
-            </Card>
-            <Card>
-              <Card.Header>
-                <h3 className="mb-0">
-                  <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                  Servicios de sistemas<small> Casos puntuales</small>
-                  </Accordion.Toggle>
-                </h3>
-              </Card.Header>
-              <Accordion.Collapse eventKey="3">
-                <Card.Body>
-                  <p>Sólo para clientes que pagan bien, o para amigos.</p>
-                </Card.Body>
-              </Accordion.Collapse>
-            </Card>
+          )})}
           </Accordion>
         </div>
       </div>
 	</div>
   )
 }
-
