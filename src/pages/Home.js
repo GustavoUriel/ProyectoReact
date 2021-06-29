@@ -1,12 +1,16 @@
-import React from 'react'
-import Header from './Header.js';
-import Jumbotron from './Jumbotron.js';
-import Carousel from './Carousel.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../css/Home.css';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+
+import Header from '../components/Header.js';
+import Jumbotron from '../components/Jumbotron.js';
+import Carousel from '../components/Carousel.js';
 import User from './User.js';
 import ServicesContainer from './ServicesContainer.js';
 import AboutUs from './AboutUs.js';
 import Contact from './Contact.js';
-import Footer from './Footer.js';
+import Footer from '../components/Footer.js';
 
 
 

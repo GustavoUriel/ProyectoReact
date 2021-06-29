@@ -11,19 +11,19 @@ function NavBar() {
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="Propuestas">
-              <NavDropdown.Item href="#">Préstamos</NavDropdown.Item>
-              <NavDropdown.Item href="#">Refinanciaciones</NavDropdown.Item>
+              <NavDropdown.Item href="/props/loans">Préstamos</NavDropdown.Item>
+              <NavDropdown.Item href="/props/refinance">Refinanciaciones</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#">Seguros de vida</NavDropdown.Item>
-              <NavDropdown.Item href="#">Seguros de hogar</NavDropdown.Item>
-              <NavDropdown.Item href="#">Seguros de comercios</NavDropdown.Item>
-              <NavDropdown.Item href="#">Seguros de vehículos</NavDropdown.Item>
+              <NavDropdown.Item href="/props/insLife">Seguros de vida</NavDropdown.Item>
+              <NavDropdown.Item href="/props/insHome">Seguros de hogar</NavDropdown.Item>
+              <NavDropdown.Item href="/props/insBusiness">Seguros de comercios</NavDropdown.Item>
+              <NavDropdown.Item href="/props/insVehicle">Seguros de vehículos</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#">Planes para vivienda</NavDropdown.Item>
+              <NavDropdown.Item href="/props/mortgage">Planes para vivienda</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/au">Nosotros</Nav.Link>
-            <Nav.Link href="#">Contanos algo</Nav.Link>
-            <Nav.Link href="#">Comparativas de sueldos</Nav.Link>
+            <Nav.Link href="/aboutUs">Nosotros</Nav.Link>
+            <Nav.Link href="/contact">Contanos algo</Nav.Link>
+            <Nav.Link href="/salaries">Comparativas de sueldos</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar> 

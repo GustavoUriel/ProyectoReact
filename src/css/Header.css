@@ -9,7 +9,6 @@
   display: inline-block;
   *display: inline;
   width: 10%;
-  float: inline-start;
 }
 
 .header-menu {
@@ -22,5 +21,4 @@
   display: inline-block;
   *display: inline;
   width: 20%;
-  float: inline;
 }

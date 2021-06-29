@@ -1,10 +1,12 @@
-import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/AboutUs.css';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { Card, Accordion, Button } from 'react-bootstrap';
 
 
 export default function AboutUs() {
+  console.log (useParams())
   return (
     <div id="seccionNosotros"> 
       <div className="col col-sm-6 ">
