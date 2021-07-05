@@ -6,7 +6,7 @@ import { Card, Accordion, Button } from 'react-bootstrap';
 
 
 export default function AboutUs() {
-  console.log (useParams())
+
   const textos = [
     {
       'id':'0',

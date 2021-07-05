@@ -22,9 +22,5 @@ export default function Header() {
       </div>
     </div>
 )
-function subirpadre() {
-  setTamanio(tamanio+1);
-  console.log('onclickpadre')
-}
 }
 

@@ -2,16 +2,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/Contact.css';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { GetUsers } from '../components/Context.js';
+/* import { GetUsers } from '../components/Context.js';
 import { Card, Accordion, Button } from 'react-bootstrap';
-
+ */
 export default function Contact() {
-    const temp = GetUsers()
-    console.log(temp);
+/*     const temp = GetUsers()
+ */
     return (
         <div>
           <h1>Contenido del array de usuarios</h1>
-
+       </div>
+    )
+}
+{/* 
 
           <Accordion>
         {temp.map((i) => {
@@ -35,6 +38,4 @@ export default function Contact() {
             </Card>
           )})}
 </Accordion>
-        </div>
-    )
-}
+ */} 

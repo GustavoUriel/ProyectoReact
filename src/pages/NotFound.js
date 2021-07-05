@@ -8,7 +8,7 @@ import { useParams } from 'react-router-dom';
 export default function NotFound() {
     return (
         <div>
-            
+            No ta!
         </div>
     )
 }

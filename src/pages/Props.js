@@ -7,9 +7,6 @@ import { useParams } from 'react-router-dom';
 
 export default function Props() {
     const param = useParams().prop_id
-    console.log(param);
-    console.log(param.length)
-
 return (
     <div>
         <h1>{param}</h1>
