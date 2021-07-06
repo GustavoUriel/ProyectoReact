@@ -2,7 +2,6 @@ import React, { useState, useContext } from 'react';
 export const OrderDeleteContext = React.createContext();
 
 export function useOrderDelete() {
-  
   return useContext(OrderDeleteContext);}
   
   export function CartContext({ children }) {

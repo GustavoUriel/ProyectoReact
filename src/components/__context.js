@@ -27,700 +27,700 @@ console.log('se esta borrando todo y no debería')
   const [services_local, setServices_local] = useState([
     {
       "id": 0,
-      "idUsuario": 6,
+      "idUser": 6,
       "idOtorgante": 77,
       "idTipoCredito": 4,
       "fecha": "23/10/2012"
     },
     {
       "id": 1,
-      "idUsuario": 2,
+      "idUser": 2,
       "idOtorgante": 26,
       "idTipoCredito": 0,
       "fecha": "20/2/2019"
     },
     {
       "id": 2,
-      "idUsuario": 2,
+      "idUser": 2,
       "idOtorgante": 17,
       "idTipoCredito": 2,
       "fecha": "18/6/2011"
     },
     {
       "id": 3,
-      "idUsuario": 2,
+      "idUser": 2,
       "idOtorgante": 59,
       "idTipoCredito": 1,
       "fecha": "26/12/2018"
     },
     {
       "id": 4,
-      "idUsuario": 9,
+      "idUser": 9,
       "idOtorgante": 81,
       "idTipoCredito": 0,
       "fecha": "16/11/2012"
     },
     {
       "id": 5,
-      "idUsuario": 9,
+      "idUser": 9,
       "idOtorgante": 78,
       "idTipoCredito": 5,
       "fecha": "9/6/2013"
     },
     {
       "id": 6,
-      "idUsuario": 7,
+      "idUser": 7,
       "idOtorgante": 3,
       "idTipoCredito": 3,
       "fecha": "20/8/2014"
     },
     {
       "id": 7,
-      "idUsuario": 9,
+      "idUser": 9,
       "idOtorgante": 35,
       "idTipoCredito": 2,
       "fecha": "2/9/2015"
     },
     {
       "id": 8,
-      "idUsuario": 8,
+      "idUser": 8,
       "idOtorgante": 75,
       "idTipoCredito": 4,
       "fecha": "1/11/2019"
     },
     {
       "id": 9,
-      "idUsuario": 6,
+      "idUser": 6,
       "idOtorgante": 2,
       "idTipoCredito": 6,
       "fecha": "14/7/2019"
     },
     {
       "id": 10,
-      "idUsuario": 4,
+      "idUser": 4,
       "idOtorgante": 59,
       "idTipoCredito": 4,
       "fecha": "7/2/2015"
     },
     {
       "id": 11,
-      "idUsuario": 3,
+      "idUser": 3,
       "idOtorgante": 6,
       "idTipoCredito": 5,
       "fecha": "4/6/2011"
     },
     {
       "id": 12,
-      "idUsuario": 4,
+      "idUser": 4,
       "idOtorgante": 15,
       "idTipoCredito": 0,
       "fecha": "29/3/2020"
     },
     {
       "id": 13,
-      "idUsuario": 1,
+      "idUser": 1,
       "idOtorgante": 41,
       "idTipoCredito": 6,
       "fecha": "24/2/2013"
     },
     {
       "id": 14,
-      "idUsuario": 1,
+      "idUser": 1,
       "idOtorgante": 12,
       "idTipoCredito": 2,
       "fecha": "23/8/2013"
     },
     {
       "id": 15,
-      "idUsuario": 4,
+      "idUser": 4,
       "idOtorgante": 19,
       "idTipoCredito": 0,
       "fecha": "12/6/2014"
     },
     {
       "id": 16,
-      "idUsuario": 6,
+      "idUser": 6,
       "idOtorgante": 61,
       "idTipoCredito": 2,
       "fecha": "21/4/2018"
     },
     {
       "id": 17,
-      "idUsuario": 3,
+      "idUser": 3,
       "idOtorgante": 40,
       "idTipoCredito": 3,
       "fecha": "2/8/2020"
     },
     {
       "id": 18,
-      "idUsuario": 5,
+      "idUser": 5,
       "idOtorgante": 60,
       "idTipoCredito": 3,
       "fecha": "2/7/2016"
     },
     {
       "id": 19,
-      "idUsuario": 7,
+      "idUser": 7,
       "idOtorgante": 36,
       "idTipoCredito": 3,
       "fecha": "11/1/2010"
     },
     {
       "id": 20,
-      "idUsuario": 0,
+      "idUser": 0,
       "idOtorgante": 34,
       "idTipoCredito": 5,
       "fecha": "31/1/2021"
     },
     {
       "id": 21,
-      "idUsuario": 0,
+      "idUser": 0,
       "idOtorgante": 38,
       "idTipoCredito": 4,
       "fecha": "23/11/2014"
     },
     {
       "id": 22,
-      "idUsuario": 6,
+      "idUser": 6,
       "idOtorgante": 7,
       "idTipoCredito": 1,
       "fecha": "5/5/2013"
     },
     {
       "id": 23,
-      "idUsuario": 7,
+      "idUser": 7,
       "idOtorgante": 63,
       "idTipoCredito": 2,
       "fecha": "30/3/2013"
     },
     {
       "id": 24,
-      "idUsuario": 8,
+      "idUser": 8,
       "idOtorgante": 9,
       "idTipoCredito": 4,
       "fecha": "5/8/2013"
     },
     {
       "id": 25,
-      "idUsuario": 8,
+      "idUser": 8,
       "idOtorgante": 2,
       "idTipoCredito": 6,
       "fecha": "11/8/2015"
     },
     {
       "id": 26,
-      "idUsuario": 2,
+      "idUser": 2,
       "idOtorgante": 76,
       "idTipoCredito": 3,
       "fecha": "10/3/2018"
     },
     {
       "id": 27,
-      "idUsuario": 5,
+      "idUser": 5,
       "idOtorgante": 64,
       "idTipoCredito": 4,
       "fecha": "8/1/2018"
     },
     {
       "id": 28,
-      "idUsuario": 9,
+      "idUser": 9,
       "idOtorgante": 0,
       "idTipoCredito": 3,
       "fecha": "26/8/2014"
     },
     {
       "id": 29,
-      "idUsuario": 2,
+      "idUser": 2,
       "idOtorgante": 51,
       "idTipoCredito": 3,
       "fecha": "20/4/2018"
     },
     {
       "id": 30,
-      "idUsuario": 4,
+      "idUser": 4,
       "idOtorgante": 63,
       "idTipoCredito": 2,
       "fecha": "7/5/2018"
     },
     {
       "id": 31,
-      "idUsuario": 1,
+      "idUser": 1,
       "idOtorgante": 35,
       "idTipoCredito": 6,
       "fecha": "12/8/2010"
     },
     {
       "id": 32,
-      "idUsuario": 3,
+      "idUser": 3,
       "idOtorgante": 50,
       "idTipoCredito": 3,
       "fecha": "27/11/2013"
     },
     {
       "id": 33,
-      "idUsuario": 2,
+      "idUser": 2,
       "idOtorgante": 41,
       "idTipoCredito": 4,
       "fecha": "4/6/2012"
     },
     {
       "id": 34,
-      "idUsuario": 9,
+      "idUser": 9,
       "idOtorgante": 57,
       "idTipoCredito": 0,
       "fecha": "17/1/2013"
     },
     {
       "id": 35,
-      "idUsuario": 1,
+      "idUser": 1,
       "idOtorgante": 75,
       "idTipoCredito": 2,
       "fecha": "30/4/2017"
     },
     {
       "id": 36,
-      "idUsuario": 5,
+      "idUser": 5,
       "idOtorgante": 16,
       "idTipoCredito": 5,
       "fecha": "6/8/2019"
     },
     {
       "id": 37,
-      "idUsuario": 8,
+      "idUser": 8,
       "idOtorgante": 76,
       "idTipoCredito": 0,
       "fecha": "25/11/2015"
     },
     {
       "id": 38,
-      "idUsuario": 7,
+      "idUser": 7,
       "idOtorgante": 77,
       "idTipoCredito": 0,
       "fecha": "4/3/2019"
     },
     {
       "id": 39,
-      "idUsuario": 0,
+      "idUser": 0,
       "idOtorgante": 43,
       "idTipoCredito": 4,
       "fecha": "13/8/2010"
     },
     {
       "id": 40,
-      "idUsuario": 8,
+      "idUser": 8,
       "idOtorgante": 40,
       "idTipoCredito": 2,
       "fecha": "17/3/2013"
     },
     {
       "id": 41,
-      "idUsuario": 6,
+      "idUser": 6,
       "idOtorgante": 46,
       "idTipoCredito": 5,
       "fecha": "11/8/2019"
     },
     {
       "id": 42,
-      "idUsuario": 9,
+      "idUser": 9,
       "idOtorgante": 21,
       "idTipoCredito": 1,
       "fecha": "13/8/2020"
     },
     {
       "id": 43,
-      "idUsuario": 3,
+      "idUser": 3,
       "idOtorgante": 0,
       "idTipoCredito": 3,
       "fecha": "22/1/2014"
     },
     {
       "id": 44,
-      "idUsuario": 5,
+      "idUser": 5,
       "idOtorgante": 71,
       "idTipoCredito": 1,
       "fecha": "2/10/2017"
     },
     {
       "id": 45,
-      "idUsuario": 0,
+      "idUser": 0,
       "idOtorgante": 68,
       "idTipoCredito": 5,
       "fecha": "29/11/2016"
     },
     {
       "id": 46,
-      "idUsuario": 4,
+      "idUser": 4,
       "idOtorgante": 2,
       "idTipoCredito": 2,
       "fecha": "15/6/2014"
     },
     {
       "id": 47,
-      "idUsuario": 0,
+      "idUser": 0,
       "idOtorgante": 21,
       "idTipoCredito": 1,
       "fecha": "23/4/2016"
     },
     {
       "id": 48,
-      "idUsuario": 3,
+      "idUser": 3,
       "idOtorgante": 70,
       "idTipoCredito": 0,
       "fecha": "9/4/2017"
     },
     {
       "id": 49,
-      "idUsuario": 9,
+      "idUser": 9,
       "idOtorgante": 32,
       "idTipoCredito": 4,
       "fecha": "10/9/2019"
     },
     {
       "id": 50,
-      "idUsuario": 7,
+      "idUser": 7,
       "idOtorgante": 29,
       "idTipoCredito": 1,
       "fecha": "8/2/2015"
     },
     {
       "id": 51,
-      "idUsuario": 7,
+      "idUser": 7,
       "idOtorgante": 58,
       "idTipoCredito": 3,
       "fecha": "25/6/2019"
     },
     {
       "id": 52,
-      "idUsuario": 8,
+      "idUser": 8,
       "idOtorgante": 17,
       "idTipoCredito": 2,
       "fecha": "9/1/2021"
     },
     {
       "id": 53,
-      "idUsuario": 2,
+      "idUser": 2,
       "idOtorgante": 1,
       "idTipoCredito": 0,
       "fecha": "28/9/2011"
     },
     {
       "id": 54,
-      "idUsuario": 8,
+      "idUser": 8,
       "idOtorgante": 12,
       "idTipoCredito": 4,
       "fecha": "10/1/2014"
     },
     {
       "id": 55,
-      "idUsuario": 6,
+      "idUser": 6,
       "idOtorgante": 40,
       "idTipoCredito": 4,
       "fecha": "7/11/2016"
     },
     {
       "id": 56,
-      "idUsuario": 9,
+      "idUser": 9,
       "idOtorgante": 25,
       "idTipoCredito": 6,
       "fecha": "27/10/2010"
     },
     {
       "id": 57,
-      "idUsuario": 0,
+      "idUser": 0,
       "idOtorgante": 26,
       "idTipoCredito": 4,
       "fecha": "7/4/2018"
     },
     {
       "id": 58,
-      "idUsuario": 3,
+      "idUser": 3,
       "idOtorgante": 32,
       "idTipoCredito": 1,
       "fecha": "22/6/2017"
     },
     {
       "id": 59,
-      "idUsuario": 0,
+      "idUser": 0,
       "idOtorgante": 68,
       "idTipoCredito": 4,
       "fecha": "3/7/2013"
     },
     {
       "id": 60,
-      "idUsuario": 5,
+      "idUser": 5,
       "idOtorgante": 28,
       "idTipoCredito": 5,
       "fecha": "10/7/2018"
     },
     {
       "id": 61,
-      "idUsuario": 1,
+      "idUser": 1,
       "idOtorgante": 28,
       "idTipoCredito": 4,
       "fecha": "17/8/2017"
     },
     {
       "id": 62,
-      "idUsuario": 6,
+      "idUser": 6,
       "idOtorgante": 44,
       "idTipoCredito": 1,
       "fecha": "13/12/2012"
     },
     {
       "id": 63,
-      "idUsuario": 6,
+      "idUser": 6,
       "idOtorgante": 67,
       "idTipoCredito": 5,
       "fecha": "26/11/2012"
     },
     {
       "id": 64,
-      "idUsuario": 9,
+      "idUser": 9,
       "idOtorgante": 25,
       "idTipoCredito": 2,
       "fecha": "23/8/2020"
     },
     {
       "id": 65,
-      "idUsuario": 5,
+      "idUser": 5,
       "idOtorgante": 77,
       "idTipoCredito": 4,
       "fecha": "26/2/2013"
     },
     {
       "id": 66,
-      "idUsuario": 7,
+      "idUser": 7,
       "idOtorgante": 69,
       "idTipoCredito": 5,
       "fecha": "17/2/2014"
     },
     {
       "id": 67,
-      "idUsuario": 1,
+      "idUser": 1,
       "idOtorgante": 14,
       "idTipoCredito": 4,
       "fecha": "23/7/2014"
     },
     {
       "id": 68,
-      "idUsuario": 4,
+      "idUser": 4,
       "idOtorgante": 18,
       "idTipoCredito": 2,
       "fecha": "7/3/2018"
     },
     {
       "id": 69,
-      "idUsuario": 8,
+      "idUser": 8,
       "idOtorgante": 26,
       "idTipoCredito": 6,
       "fecha": "25/1/2019"
     },
     {
       "id": 70,
-      "idUsuario": 6,
+      "idUser": 6,
       "idOtorgante": 43,
       "idTipoCredito": 6,
       "fecha": "31/5/2020"
     },
     {
       "id": 71,
-      "idUsuario": 1,
+      "idUser": 1,
       "idOtorgante": 38,
       "idTipoCredito": 4,
       "fecha": "18/10/2015"
     },
     {
       "id": 72,
-      "idUsuario": 9,
+      "idUser": 9,
       "idOtorgante": 73,
       "idTipoCredito": 2,
       "fecha": "22/11/2015"
     },
     {
       "id": 73,
-      "idUsuario": 2,
+      "idUser": 2,
       "idOtorgante": 8,
       "idTipoCredito": 4,
       "fecha": "18/6/2018"
     },
     {
       "id": 74,
-      "idUsuario": 7,
+      "idUser": 7,
       "idOtorgante": 50,
       "idTipoCredito": 4,
       "fecha": "15/11/2011"
     },
     {
       "id": 75,
-      "idUsuario": 7,
+      "idUser": 7,
       "idOtorgante": 6,
       "idTipoCredito": 5,
       "fecha": "13/2/2014"
     },
     {
       "id": 76,
-      "idUsuario": 4,
+      "idUser": 4,
       "idOtorgante": 75,
       "idTipoCredito": 0,
       "fecha": "26/7/2011"
     },
     {
       "id": 77,
-      "idUsuario": 2,
+      "idUser": 2,
       "idOtorgante": 37,
       "idTipoCredito": 6,
       "fecha": "25/11/2020"
     },
     {
       "id": 78,
-      "idUsuario": 7,
+      "idUser": 7,
       "idOtorgante": 70,
       "idTipoCredito": 3,
       "fecha": "29/11/2013"
     },
     {
       "id": 79,
-      "idUsuario": 2,
+      "idUser": 2,
       "idOtorgante": 23,
       "idTipoCredito": 1,
       "fecha": "2/6/2014"
     },
     {
       "id": 80,
-      "idUsuario": 0,
+      "idUser": 0,
       "idOtorgante": 54,
       "idTipoCredito": 5,
       "fecha": "9/1/2021"
     },
     {
       "id": 81,
-      "idUsuario": 3,
+      "idUser": 3,
       "idOtorgante": 44,
       "idTipoCredito": 5,
       "fecha": "26/5/2011"
     },
     {
       "id": 82,
-      "idUsuario": 8,
+      "idUser": 8,
       "idOtorgante": 3,
       "idTipoCredito": 6,
       "fecha": "24/6/2016"
     },
     {
       "id": 83,
-      "idUsuario": 9,
+      "idUser": 9,
       "idOtorgante": 79,
       "idTipoCredito": 1,
       "fecha": "11/1/2013"
     },
     {
       "id": 84,
-      "idUsuario": 5,
+      "idUser": 5,
       "idOtorgante": 2,
       "idTipoCredito": 5,
       "fecha": "22/7/2013"
     },
     {
       "id": 85,
-      "idUsuario": 9,
+      "idUser": 9,
       "idOtorgante": 24,
       "idTipoCredito": 1,
       "fecha": "1/5/2011"
     },
     {
       "id": 86,
-      "idUsuario": 5,
+      "idUser": 5,
       "idOtorgante": 15,
       "idTipoCredito": 6,
       "fecha": "8/8/2020"
     },
     {
       "id": 87,
-      "idUsuario": 6,
+      "idUser": 6,
       "idOtorgante": 58,
       "idTipoCredito": 2,
       "fecha": "31/10/2019"
     },
     {
       "id": 88,
-      "idUsuario": 7,
+      "idUser": 7,
       "idOtorgante": 19,
       "idTipoCredito": 3,
       "fecha": "26/11/2012"
     },
     {
       "id": 89,
-      "idUsuario": 4,
+      "idUser": 4,
       "idOtorgante": 12,
       "idTipoCredito": 1,
       "fecha": "27/5/2018"
     },
     {
       "id": 90,
-      "idUsuario": 9,
+      "idUser": 9,
       "idOtorgante": 6,
       "idTipoCredito": 5,
       "fecha": "10/5/2015"
     },
     {
       "id": 91,
-      "idUsuario": 9,
+      "idUser": 9,
       "idOtorgante": 66,
       "idTipoCredito": 3,
       "fecha": "4/7/2018"
     },
     {
       "id": 92,
-      "idUsuario": 7,
+      "idUser": 7,
       "idOtorgante": 69,
       "idTipoCredito": 5,
       "fecha": "15/3/2011"
     },
     {
       "id": 93,
-      "idUsuario": 3,
+      "idUser": 3,
       "idOtorgante": 52,
       "idTipoCredito": 5,
       "fecha": "14/6/2016"
     },
     {
       "id": 94,
-      "idUsuario": 4,
+      "idUser": 4,
       "idOtorgante": 46,
       "idTipoCredito": 1,
       "fecha": "11/8/2015"
     },
     {
       "id": 95,
-      "idUsuario": 9,
+      "idUser": 9,
       "idOtorgante": 72,
       "idTipoCredito": 3,
       "fecha": "20/3/2019"
     },
     {
       "id": 96,
-      "idUsuario": 9,
+      "idUser": 9,
       "idOtorgante": 23,
       "idTipoCredito": 1,
       "fecha": "4/4/2010"
     },
     {
       "id": 97,
-      "idUsuario": 3,
+      "idUser": 3,
       "idOtorgante": 76,
       "idTipoCredito": 5,
       "fecha": "8/6/2015"
     },
     {
       "id": 98,
-      "idUsuario": 6,
+      "idUser": 6,
       "idOtorgante": 73,
       "idTipoCredito": 0,
       "fecha": "20/3/2015"
     },
     {
       "id": 99,
-      "idUsuario": 0,
+      "idUser": 0,
       "idOtorgante": 0,
       "idTipoCredito": 3,
       "fecha": "15/11/2020"
@@ -1697,7 +1697,7 @@ console.log('se esta borrando todo y no debería')
   const addUserServices_local = (idProvider, idService) => {
     var tempToAdd = {
       id: services_local.length(),
-      idUsuario: user.id,
+      idUser: user.id,
       idOtorgante: idProvider,
       idTipoCredito: idService,
       fecha: Date().toLocaleString(),
