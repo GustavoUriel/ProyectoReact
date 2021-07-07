@@ -1583,7 +1583,7 @@ const users = [
     incomeAsEmployee: 0,
     incomeAsSelfEmployed: 35000000,
     incomeNotRegistered: 0,
-    fiscalStatus: 1,
+    fiscalStatus : 1,
     homeOwner: true,
     carOwner: false,
   },
@@ -1698,7 +1698,6 @@ users_services.forEach(function (i) {
       date: i.date,
     })
     .then(function (doc) {
-      console.log("users_services id:", doc.id);
     })
     .catch(function (error) {
       console.error("Error: ", error);
@@ -1717,7 +1716,6 @@ providers.forEach(function (i) {
       showOnCarousel: i.showOnCarousel,
     })
     .then(function (doc) {
-      console.log("provider id:", doc.id);
     })
     .catch(function (error) {
       console.error("Error: ", error);
@@ -1743,7 +1741,6 @@ users.forEach(function (i) {
       carOwner: i.carOwner,
     })
     .then(function (doc) {
-      console.log("user id:", doc.id);
     })
     .catch(function (error) {
       console.error("Error: ", error);
@@ -1759,7 +1756,6 @@ services.forEach(function (i) {
       description: i.description,
     })
     .then(function (doc) {
-      console.log("service id:", doc.id);
     })
     .catch(function (error) {
       console.error("Error: ", error);

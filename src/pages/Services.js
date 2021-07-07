@@ -1,11 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/Props.css';
+import '../css/Services.css';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 
 
-export default function Props() {
+export default function Services() {
     const param = useParams().prop_id
 return (
     <div>

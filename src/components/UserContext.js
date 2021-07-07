@@ -76,7 +76,7 @@ export function Context({ children }) {
   const addUserService = (service) => {console.log('addUserService')}
   const removeUserService= (service) => {console.log('removeUserService')}
   const listServices= () => {console.log('listServices')}
-  const getUserData= () => {console.log('getUserData')}
+  const listUserData= () => {console.log('listUserData')}
   const listUsers= () => {console.log('listUsers')}
   const selectUser= () => {console.log('selectUser')}
 
@@ -85,7 +85,7 @@ export function Context({ children }) {
 
 
 const value={addUserService, removeUserService, listUserServices,
-  listServices,getUserData, listUsers, selectUser}
+  listServices,listUserData, listUsers, selectUser}
   return (
     <AddTocontext.Provider value={value}>
       {children}

@@ -10,7 +10,6 @@ export function useOrderDelete() {
   const deleteOrderItem = (i) => {
     let tmp = [...order];
     tmp.splice(i, 1);
-    console.log(tmp);
     setOrder(tmp);
   };
 

@@ -23,7 +23,6 @@ export function AddTo() { return useContext(AddTo_context); };
 
 
 export function Context({ children }) {
-console.log('se esta borrando todo y no debería')
   const [services_local, setServices_local] = useState([
     {
       "id": 0,
@@ -1716,7 +1715,6 @@ console.log('se esta borrando todo y no debería')
 
   const AddTo = () => {
     let tmp = cuenta;
-    console.log(cuenta);
     setCuenta(tmp + 1);
     return cuenta
   };

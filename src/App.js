@@ -4,9 +4,10 @@ import { Container, Spinner } from 'react-bootstrap';
 import Home from './pages/Home.js'
 import Header from './components/Header.js'
 import AboutUs from './pages/AboutUs.js'
-import Props from './pages/Props'
+import Services from './pages/Services'
 import Contact from './pages/Contact.js'
 import Salaries from './pages/Salaries.js'
+import AboutYou from './pages/AboutYou.js'
 import Footer from './components/Footer.js'
 import NotFound from './pages/NotFound';
 import BannerStatistics from './components/BannerStatistics.js'
@@ -15,7 +16,7 @@ import React, { useEffect, useState } from "react";
 import { useLocalContext } from './components/Context';
 
 function App() {
-  const { selectUser, listUserServices, addUserService, removeUserService, listServices, listProviders, getUserData, listUsers, doneLoading
+  const { selectUser, listUserServices, addUserService, removeUserService, listServices, listProviders, listUserData, listUsers, doneLoading
   } = useLocalContext();
 
   const [loaded, setLoaded] = useState(true)
@@ -35,12 +36,13 @@ function App() {
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/aboutUs" component={AboutUs} />
+                <Route exact path="/aboutYou" component={AboutYou} />
                 <Route exact path="/contact" component={Contact} />
                 <Route exact path="/salaries" component={Salaries} />
                 <Route exact path="/contact" component={Contact} />
-                <Route exact path="/props/:prop_id">
+                <Route exact path="/services/:service_id">
                   <BannerStatistics />
-                  <Props />
+                  <Services />
                 </Route>
                 <Route component={NotFound} />
               </Switch>

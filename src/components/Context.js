@@ -38,10 +38,9 @@ export function Context({ children }) {
         setUsers([]);
       } else {
         let toArrange = querySnapshot.docs.map((doc) => doc.data())
-        console.log('antes de ordenar', toArrange)
-        toArrange.sort((a,b)=>a.id-b.id)
-        console.log('desp de ordenar', toArrange)
-        setUsers(toArrange);      }
+        toArrange.sort((a, b) => a.id - b.id)
+        setUsers(toArrange);
+      }
     })
     dbServices.get().then((querySnapshot) => {
       if (querySnapshot.size === 0) {
@@ -65,30 +64,24 @@ export function Context({ children }) {
   const [loggedUser, setLoggedUser] = useState(null); // Document of logged user info
 
   const selectUser = (props) => {
-    console.log('selectUser ', props)
+    let result
     if (props) {
-      let result
-      users.map((i) => { if (i.id == props) { result = i } });
+      result = users.find(i => i.id == props)
       setLoggedUser(result);
-      console.log(result)
-      console.log(result.id)
       return result
     }
   }
 
   const listUserServices = (props) => {
-    console.log('listUserServices')
     if (loggedUser) {
       let result
-      console.log('todoslosservicios', users_services)
       result = users_services.filter(i => i.idUser == loggedUser.id)
-      console.log('solodelusuario', result)
+      console.log('user services', result)
       return result
     }
   }
 
   const addUserService = (props) => {
-    console.log('addUserService')
     if (props.idUser && props.idService && props.idProvider && loggedUser) {
       let result
       const doc = {
@@ -99,48 +92,52 @@ export function Context({ children }) {
         fecha: Date.now(),
       };
       result = users_services.push(doc)
-      console.log(result)
       return result
     }
   }
 
   const removeUserService = (props) => {
-    console.log('removeUserService')
-    if (props.idService && props.idProvider && loggedUser) {
+    console.log ('props', props)
+    console.log ('loggedUser', loggedUser)
+    console.log ('props && loggedUser', props && loggedUser)
+    if (props && loggedUser) {
+      console.log('user services'.users_services)
       let result
-      result = users_services.filter((i) => {
-        return i.idUser != loggedUser.id || i.services != props.idService || i.idProvider != props.idProvider;
-      });
-      return setUsers_services(result)
+      result = users_services.filter(i => (i.id != props)      )
+      setUsers_services(result)
+      console.log('despues de borrar'.return)
+      return result
     }
   }
+
   const listServices = () => {
-    console.log('listServices')
     let result
     result = services;
-    console.log(result)
     return result;
   }
   const listProviders = () => {
-    console.log('listProviders')
     let result
     result = providers;
-    console.log(result)
     return result;
   }
-  const getUserData = (props) => {
+  const listUserData = (props) => {
     let result;
-    console.log('getUserData')
-    result = loggedUser
-    console.log(result)
-    return result
+    if (!props) {
+      result = loggedUser
+      return result
+    }
+    else {
+      let result
+      result = users.find(i => i.id == props)
+      setLoggedUser(result);
+      setLoggedUser(result);
+      return result
+    }
   }
 
   const listUsers = (props) => {
-    console.log('listUsers')
     let result
     result = users;
-    console.log(result)
     return result;
   }
 
@@ -150,7 +147,7 @@ export function Context({ children }) {
   }
 
   const value = {
-    selectUser, listUserServices, addUserService, removeUserService, listServices, listProviders, getUserData, listUsers, doneLoading
+    selectUser, listUserServices, addUserService, removeUserService, listServices, listProviders, listUserData, listUsers, doneLoading
   }
   return (
     <LocalContext.Provider value={value}>
