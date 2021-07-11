@@ -1,1 +1,7 @@
-/* No CSS */
+.service-card {
+  padding: 5px;
+  border-style: solid;
+  border: black;
+  border-color: #512DA8;
+  border-width: 50px;
+}

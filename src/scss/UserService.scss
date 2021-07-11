@@ -1,2 +1,13 @@
 @import './_vars.scss';
 @import './_generals'; 
+
+.service-card {
+    padding: 5px;
+    border-style: solid;
+    border:black;
+    border-color:  $back_Dark;
+    border-width: 50px;
+}
+  
+  
+   
