@@ -1,6 +1,8 @@
 const firebase = require("firebase");
 require("firebase/firestore");
 
+// This file is to be executed only once, via node, to create all the databases in FIREBASE
+
 firebase.initializeApp({
   apiKey: "AIzaSyAgGqLFTNItz-HQES7bdJGUcwfWvwQPEDo",
   authDomain: "reactproyect-coderhouse.firebaseapp.com",
@@ -13,13 +15,14 @@ firebase.initializeApp({
 
 const db = firebase.firestore();
 
-const users_services = [
+const userssServices = [
   {
     id: 0,
     idUser: 6,
     idProvider: 77,
     idService: 4,
     date: "23/10/2012",
+  value: 2234234,
   },
   {
     id: 1,
@@ -27,6 +30,7 @@ const users_services = [
     idProvider: 26,
     idService: 0,
     date: "20/2/2019",
+    value: 2234234,
   },
   {
     id: 2,
@@ -34,6 +38,7 @@ const users_services = [
     idProvider: 17,
     idService: 2,
     date: "18/6/2011",
+    value: 2234234,
   },
   {
     id: 3,
@@ -41,6 +46,7 @@ const users_services = [
     idProvider: 59,
     idService: 1,
     date: "26/12/2018",
+    value: 2234234,
   },
   {
     id: 4,
@@ -48,6 +54,7 @@ const users_services = [
     idProvider: 81,
     idService: 0,
     date: "16/11/2012",
+    value: 2234234,
   },
   {
     id: 5,
@@ -55,6 +62,7 @@ const users_services = [
     idProvider: 78,
     idService: 5,
     date: "9/6/2013",
+    value: 2234234,
   },
   {
     id: 6,
@@ -62,6 +70,7 @@ const users_services = [
     idProvider: 3,
     idService: 3,
     date: "20/8/2014",
+    value: 2234234,
   },
   {
     id: 7,
@@ -69,6 +78,7 @@ const users_services = [
     idProvider: 35,
     idService: 2,
     date: "2/9/2015",
+    value: 2234234,
   },
   {
     id: 8,
@@ -76,6 +86,7 @@ const users_services = [
     idProvider: 75,
     idService: 4,
     date: "1/11/2019",
+    value: 2234234,
   },
   {
     id: 9,
@@ -83,6 +94,7 @@ const users_services = [
     idProvider: 2,
     idService: 6,
     date: "14/7/2019",
+    value: 2234234,
   },
   {
     id: 10,
@@ -90,6 +102,7 @@ const users_services = [
     idProvider: 59,
     idService: 4,
     date: "7/2/2015",
+    value: 2234234,
   },
   {
     id: 11,
@@ -97,6 +110,7 @@ const users_services = [
     idProvider: 6,
     idService: 5,
     date: "4/6/2011",
+    value: 2234234,
   },
   {
     id: 12,
@@ -104,6 +118,7 @@ const users_services = [
     idProvider: 15,
     idService: 0,
     date: "29/3/2020",
+    value: 2234234,
   },
   {
     id: 13,
@@ -111,6 +126,7 @@ const users_services = [
     idProvider: 41,
     idService: 6,
     date: "24/2/2013",
+    value: 2234234,
   },
   {
     id: 14,
@@ -118,6 +134,7 @@ const users_services = [
     idProvider: 12,
     idService: 2,
     date: "23/8/2013",
+    value: 2234234,
   },
   {
     id: 15,
@@ -125,6 +142,7 @@ const users_services = [
     idProvider: 19,
     idService: 0,
     date: "12/6/2014",
+    value: 2234234,
   },
   {
     id: 16,
@@ -132,6 +150,7 @@ const users_services = [
     idProvider: 61,
     idService: 2,
     date: "21/4/2018",
+    value: 2234234,
   },
   {
     id: 17,
@@ -139,6 +158,7 @@ const users_services = [
     idProvider: 40,
     idService: 3,
     date: "2/8/2020",
+    value: 2234234,
   },
   {
     id: 18,
@@ -146,6 +166,7 @@ const users_services = [
     idProvider: 60,
     idService: 3,
     date: "2/7/2016",
+    value: 2234234,
   },
   {
     id: 19,
@@ -153,6 +174,7 @@ const users_services = [
     idProvider: 36,
     idService: 3,
     date: "11/1/2010",
+    value: 2234234,
   },
   {
     id: 20,
@@ -160,6 +182,7 @@ const users_services = [
     idProvider: 34,
     idService: 5,
     date: "31/1/2021",
+    value: 2234234,
   },
   {
     id: 21,
@@ -167,6 +190,7 @@ const users_services = [
     idProvider: 38,
     idService: 4,
     date: "23/11/2014",
+    value: 2234234,
   },
   {
     id: 22,
@@ -174,6 +198,7 @@ const users_services = [
     idProvider: 7,
     idService: 1,
     date: "5/5/2013",
+    value: 2234234,
   },
   {
     id: 23,
@@ -181,6 +206,7 @@ const users_services = [
     idProvider: 63,
     idService: 2,
     date: "30/3/2013",
+    value: 2234234,
   },
   {
     id: 24,
@@ -188,6 +214,7 @@ const users_services = [
     idProvider: 9,
     idService: 4,
     date: "5/8/2013",
+    value: 2234234,
   },
   {
     id: 25,
@@ -195,6 +222,7 @@ const users_services = [
     idProvider: 2,
     idService: 6,
     date: "11/8/2015",
+    value: 2234234,
   },
   {
     id: 26,
@@ -202,6 +230,7 @@ const users_services = [
     idProvider: 76,
     idService: 3,
     date: "10/3/2018",
+    value: 2234234,
   },
   {
     id: 27,
@@ -209,6 +238,7 @@ const users_services = [
     idProvider: 64,
     idService: 4,
     date: "8/1/2018",
+    value: 2234234,
   },
   {
     id: 28,
@@ -216,6 +246,7 @@ const users_services = [
     idProvider: 0,
     idService: 3,
     date: "26/8/2014",
+    value: 2234234,
   },
   {
     id: 29,
@@ -223,6 +254,7 @@ const users_services = [
     idProvider: 51,
     idService: 3,
     date: "20/4/2018",
+    value: 2234234,
   },
   {
     id: 30,
@@ -230,6 +262,7 @@ const users_services = [
     idProvider: 63,
     idService: 2,
     date: "7/5/2018",
+    value: 2234234,
   },
   {
     id: 31,
@@ -237,6 +270,7 @@ const users_services = [
     idProvider: 35,
     idService: 6,
     date: "12/8/2010",
+    value: 2234234,
   },
   {
     id: 32,
@@ -244,6 +278,7 @@ const users_services = [
     idProvider: 50,
     idService: 3,
     date: "27/11/2013",
+    value: 2234234,
   },
   {
     id: 33,
@@ -251,6 +286,7 @@ const users_services = [
     idProvider: 41,
     idService: 4,
     date: "4/6/2012",
+    value: 2234234,
   },
   {
     id: 34,
@@ -258,6 +294,7 @@ const users_services = [
     idProvider: 57,
     idService: 0,
     date: "17/1/2013",
+    value: 2234234,
   },
   {
     id: 35,
@@ -265,6 +302,7 @@ const users_services = [
     idProvider: 75,
     idService: 2,
     date: "30/4/2017",
+    value: 2234234,
   },
   {
     id: 36,
@@ -272,6 +310,7 @@ const users_services = [
     idProvider: 16,
     idService: 5,
     date: "6/8/2019",
+    value: 2234234,
   },
   {
     id: 37,
@@ -279,6 +318,7 @@ const users_services = [
     idProvider: 76,
     idService: 0,
     date: "25/11/2015",
+    value: 2234234,
   },
   {
     id: 38,
@@ -286,6 +326,7 @@ const users_services = [
     idProvider: 77,
     idService: 0,
     date: "4/3/2019",
+    value: 2234234,
   },
   {
     id: 39,
@@ -293,6 +334,7 @@ const users_services = [
     idProvider: 43,
     idService: 4,
     date: "13/8/2010",
+    value: 2234234,
   },
   {
     id: 40,
@@ -300,6 +342,7 @@ const users_services = [
     idProvider: 40,
     idService: 2,
     date: "17/3/2013",
+    value: 2234234,
   },
   {
     id: 41,
@@ -307,6 +350,7 @@ const users_services = [
     idProvider: 46,
     idService: 5,
     date: "11/8/2019",
+    value: 2234234,
   },
   {
     id: 42,
@@ -314,6 +358,7 @@ const users_services = [
     idProvider: 21,
     idService: 1,
     date: "13/8/2020",
+    value: 2234234,
   },
   {
     id: 43,
@@ -321,6 +366,7 @@ const users_services = [
     idProvider: 0,
     idService: 3,
     date: "22/1/2014",
+    value: 2234234,
   },
   {
     id: 44,
@@ -328,6 +374,7 @@ const users_services = [
     idProvider: 71,
     idService: 1,
     date: "2/10/2017",
+    value: 2234234,
   },
   {
     id: 45,
@@ -335,6 +382,7 @@ const users_services = [
     idProvider: 68,
     idService: 5,
     date: "29/11/2016",
+    value: 2234234,
   },
   {
     id: 46,
@@ -342,6 +390,7 @@ const users_services = [
     idProvider: 2,
     idService: 2,
     date: "15/6/2014",
+    value: 2234234,
   },
   {
     id: 47,
@@ -349,6 +398,7 @@ const users_services = [
     idProvider: 21,
     idService: 1,
     date: "23/4/2016",
+    value: 2234234,
   },
   {
     id: 48,
@@ -356,6 +406,7 @@ const users_services = [
     idProvider: 70,
     idService: 0,
     date: "9/4/2017",
+    value: 2234234,
   },
   {
     id: 49,
@@ -363,6 +414,7 @@ const users_services = [
     idProvider: 32,
     idService: 4,
     date: "10/9/2019",
+    value: 2234234,
   },
   {
     id: 50,
@@ -370,6 +422,7 @@ const users_services = [
     idProvider: 29,
     idService: 1,
     date: "8/2/2015",
+    value: 2234234,
   },
   {
     id: 51,
@@ -377,6 +430,7 @@ const users_services = [
     idProvider: 58,
     idService: 3,
     date: "25/6/2019",
+    value: 2234234,
   },
   {
     id: 52,
@@ -384,6 +438,7 @@ const users_services = [
     idProvider: 17,
     idService: 2,
     date: "9/1/2021",
+    value: 2234234,
   },
   {
     id: 53,
@@ -391,6 +446,7 @@ const users_services = [
     idProvider: 1,
     idService: 0,
     date: "28/9/2011",
+    value: 2234234,
   },
   {
     id: 54,
@@ -398,6 +454,7 @@ const users_services = [
     idProvider: 12,
     idService: 4,
     date: "10/1/2014",
+    value: 2234234,
   },
   {
     id: 55,
@@ -405,6 +462,7 @@ const users_services = [
     idProvider: 40,
     idService: 4,
     date: "7/11/2016",
+    value: 2234234,
   },
   {
     id: 56,
@@ -412,6 +470,7 @@ const users_services = [
     idProvider: 25,
     idService: 6,
     date: "27/10/2010",
+    value: 2234234,
   },
   {
     id: 57,
@@ -419,6 +478,7 @@ const users_services = [
     idProvider: 26,
     idService: 4,
     date: "7/4/2018",
+    value: 2234234,
   },
   {
     id: 58,
@@ -426,6 +486,7 @@ const users_services = [
     idProvider: 32,
     idService: 1,
     date: "22/6/2017",
+    value: 2234234,
   },
   {
     id: 59,
@@ -433,6 +494,7 @@ const users_services = [
     idProvider: 68,
     idService: 4,
     date: "3/7/2013",
+    value: 2234234,
   },
   {
     id: 60,
@@ -440,6 +502,7 @@ const users_services = [
     idProvider: 28,
     idService: 5,
     date: "10/7/2018",
+    value: 2234234,
   },
   {
     id: 61,
@@ -447,6 +510,7 @@ const users_services = [
     idProvider: 28,
     idService: 4,
     date: "17/8/2017",
+    value: 2234234,
   },
   {
     id: 62,
@@ -454,6 +518,7 @@ const users_services = [
     idProvider: 44,
     idService: 1,
     date: "13/12/2012",
+    value: 2234234,
   },
   {
     id: 63,
@@ -461,6 +526,8 @@ const users_services = [
     idProvider: 67,
     idService: 5,
     date: "26/11/2012",
+    value: 2234234,
+    value: 2234234,
   },
   {
     id: 64,
@@ -468,6 +535,7 @@ const users_services = [
     idProvider: 25,
     idService: 2,
     date: "23/8/2020",
+    value: 2234234,
   },
   {
     id: 65,
@@ -475,6 +543,7 @@ const users_services = [
     idProvider: 77,
     idService: 4,
     date: "26/2/2013",
+    value: 2234234,
   },
   {
     id: 66,
@@ -482,6 +551,7 @@ const users_services = [
     idProvider: 69,
     idService: 5,
     date: "17/2/2014",
+    value: 2234234,
   },
   {
     id: 67,
@@ -489,6 +559,7 @@ const users_services = [
     idProvider: 14,
     idService: 4,
     date: "23/7/2014",
+    value: 2234234,
   },
   {
     id: 68,
@@ -496,6 +567,7 @@ const users_services = [
     idProvider: 18,
     idService: 2,
     date: "7/3/2018",
+    value: 2234234,
   },
   {
     id: 69,
@@ -503,6 +575,7 @@ const users_services = [
     idProvider: 26,
     idService: 6,
     date: "25/1/2019",
+    value: 2234234,
   },
   {
     id: 70,
@@ -510,6 +583,7 @@ const users_services = [
     idProvider: 43,
     idService: 6,
     date: "31/5/2020",
+    value: 2234234,
   },
   {
     id: 71,
@@ -517,6 +591,7 @@ const users_services = [
     idProvider: 38,
     idService: 4,
     date: "18/10/2015",
+    value: 2234234,
   },
   {
     id: 72,
@@ -524,6 +599,7 @@ const users_services = [
     idProvider: 73,
     idService: 2,
     date: "22/11/2015",
+    value: 2234234,
   },
   {
     id: 73,
@@ -531,6 +607,7 @@ const users_services = [
     idProvider: 8,
     idService: 4,
     date: "18/6/2018",
+    value: 2234234,
   },
   {
     id: 74,
@@ -538,6 +615,7 @@ const users_services = [
     idProvider: 50,
     idService: 4,
     date: "15/11/2011",
+    value: 2234234,
   },
   {
     id: 75,
@@ -545,6 +623,7 @@ const users_services = [
     idProvider: 6,
     idService: 5,
     date: "13/2/2014",
+    value: 2234234,
   },
   {
     id: 76,
@@ -552,6 +631,7 @@ const users_services = [
     idProvider: 75,
     idService: 0,
     date: "26/7/2011",
+    value: 2234234,
   },
   {
     id: 77,
@@ -559,6 +639,7 @@ const users_services = [
     idProvider: 37,
     idService: 6,
     date: "25/11/2020",
+    value: 2234234,
   },
   {
     id: 78,
@@ -566,6 +647,7 @@ const users_services = [
     idProvider: 70,
     idService: 3,
     date: "29/11/2013",
+    value: 2234234,
   },
   {
     id: 79,
@@ -573,6 +655,7 @@ const users_services = [
     idProvider: 23,
     idService: 1,
     date: "2/6/2014",
+    value: 2234234,
   },
   {
     id: 80,
@@ -580,6 +663,7 @@ const users_services = [
     idProvider: 54,
     idService: 5,
     date: "9/1/2021",
+    value: 2234234,
   },
   {
     id: 81,
@@ -587,6 +671,7 @@ const users_services = [
     idProvider: 44,
     idService: 5,
     date: "26/5/2011",
+    value: 2234234,
   },
   {
     id: 82,
@@ -594,6 +679,7 @@ const users_services = [
     idProvider: 3,
     idService: 6,
     date: "24/6/2016",
+    value: 2234234,
   },
   {
     id: 83,
@@ -601,6 +687,7 @@ const users_services = [
     idProvider: 79,
     idService: 1,
     date: "11/1/2013",
+    value: 2234234,
   },
   {
     id: 84,
@@ -608,6 +695,7 @@ const users_services = [
     idProvider: 2,
     idService: 5,
     date: "22/7/2013",
+    value: 2234234,
   },
   {
     id: 85,
@@ -615,6 +703,7 @@ const users_services = [
     idProvider: 24,
     idService: 1,
     date: "1/5/2011",
+    value: 2234234,
   },
   {
     id: 86,
@@ -622,6 +711,7 @@ const users_services = [
     idProvider: 15,
     idService: 6,
     date: "8/8/2020",
+    value: 2234234,
   },
   {
     id: 87,
@@ -629,6 +719,7 @@ const users_services = [
     idProvider: 58,
     idService: 2,
     date: "31/10/2019",
+    value: 2234234,
   },
   {
     id: 88,
@@ -636,6 +727,7 @@ const users_services = [
     idProvider: 19,
     idService: 3,
     date: "26/11/2012",
+    value: 2234234,
   },
   {
     id: 89,
@@ -643,6 +735,7 @@ const users_services = [
     idProvider: 12,
     idService: 1,
     date: "27/5/2018",
+    value: 2234234,
   },
   {
     id: 90,
@@ -650,6 +743,7 @@ const users_services = [
     idProvider: 6,
     idService: 5,
     date: "10/5/2015",
+    value: 2234234,
   },
   {
     id: 91,
@@ -657,6 +751,7 @@ const users_services = [
     idProvider: 66,
     idService: 3,
     date: "4/7/2018",
+    value: 2234234,
   },
   {
     id: 92,
@@ -664,6 +759,8 @@ const users_services = [
     idProvider: 69,
     idService: 5,
     date: "15/3/2011",
+    value: 2234234,
+    value: 2234234,
   },
   {
     id: 93,
@@ -671,6 +768,7 @@ const users_services = [
     idProvider: 52,
     idService: 5,
     date: "14/6/2016",
+    value: 2234234,
   },
   {
     id: 94,
@@ -678,6 +776,7 @@ const users_services = [
     idProvider: 46,
     idService: 1,
     date: "11/8/2015",
+    value: 2234234,
   },
   {
     id: 95,
@@ -685,6 +784,7 @@ const users_services = [
     idProvider: 72,
     idService: 3,
     date: "20/3/2019",
+    value: 2234234,
   },
   {
     id: 96,
@@ -692,6 +792,7 @@ const users_services = [
     idProvider: 23,
     idService: 1,
     date: "4/4/2010",
+    value: 2234234,
   },
   {
     id: 97,
@@ -699,6 +800,7 @@ const users_services = [
     idProvider: 76,
     idService: 5,
     date: "8/6/2015",
+    value: 2234234,
   },
   {
     id: 98,
@@ -706,6 +808,7 @@ const users_services = [
     idProvider: 73,
     idService: 0,
     date: "20/3/2015",
+    value: 2234234,
   },
   {
     id: 99,
@@ -713,6 +816,7 @@ const users_services = [
     idProvider: 0,
     idService: 3,
     date: "15/11/2020",
+    value: 2234234,
   },
 ];
 const providers = [
@@ -1583,7 +1687,7 @@ const users = [
     incomeAsEmployee: 0,
     incomeAsSelfEmployed: 35000000,
     incomeNotRegistered: 0,
-    fiscalStatus : 1,
+    fiscalStatus: 1,
     homeOwner: true,
     carOwner: false,
   },
@@ -1643,6 +1747,7 @@ const services = [
     image: "https://dummyimage.com/300x300/9675cd/522da8.png&text=Descubierto",
     description:
       "Tasa de interés aplicable al descubierto de una cuenta corriente en pesos",
+    isCredit: true,
   },
   {
     id: 1,
@@ -1651,6 +1756,7 @@ const services = [
       "https://dummyimage.com/300x300/9675cd/522da8.png&text=InterésMaster",
     description:
       "Tasa de interés aplicable al saldo impago del resumen de la tarjeta MasterCard",
+    isCredit: true,
   },
   {
     id: 2,
@@ -1658,38 +1764,71 @@ const services = [
     image: "https://dummyimage.com/300x300/9675cd/522da8.png&text=InterésVisa",
     description:
       "Tasa de interés aplicable al saldo impago del resumen de la tarjeta Visa",
-  },
+      isCredit: true,
+    },
   {
     id: 3,
     name: "Saldo de Tarjeta AMEX",
     image: "https://dummyimage.com/300x300/9675cd/522da8.png&text=Crédito",
     description:
       "Tasa de interés aplicable al momento de solicitar un crédito en pesos",
-  },
+      isCredit: true,
+    },
   {
     id: 4,
     name: "Crédito a sola firma",
     image: "https://dummyimage.com/300x300/9675cd/522da8.png&text=Crédito",
     description:
       "Tasa de interés aplicable al momento de solicitar un crédito en pesos",
-  },
+      isCredit: true,
+    },
   {
     id: 5,
     name: "Crédito para compras de inmuebles",
     image: "https://dummyimage.com/300x300/9675cd/522da8.png&text=Inmuebles",
     description: "Interés variable dependiente de la inflación",
-  },
+    isCredit: true,
+    },
   {
     id: 6,
     name: "Financiación de compra de vehículos",
     image: "https://dummyimage.com/300x300/9675cd/522da8.png&text=Descubierto",
     description:
       "Tasa de interés aplicable al descubierto de una cuenta corriente en pesos",
-  },
+      isCredit: true,
+    },
+    {id: 7,
+    name: "Servicio de telefonía celular",
+    image: "https://dummyimage.com/300x300/9675cd/522da8.png&text=Celular",
+    description:
+      "Tarifa plana por el servicio de celular",
+      isCredit: false,
+    },
+    {id: 8,
+      name: "Servicio de internet hogareño",
+      image: "https://dummyimage.com/300x300/9675cd/522da8.png&text=Internet",
+      description:
+        "Tarifa plana por el servicio de Internet",
+        isCredit: false,
+      },
+      {id: 9,
+        name: "Seguro de vida",
+        image: "https://dummyimage.com/300x300/9675cd/522da8.png&text=Seguro de vida",
+        description:
+          "Abono mensual por el seguro de vida",
+          isCredit: false,
+        },
+        {id: 10,
+          name: "Gasto de mantenimiento de cuenta",
+          image: "https://dummyimage.com/300x300/9675cd/522da8.png&text=Mantenimiento_cuenta",
+          description:
+            "Costo mensual por el paquete de productos estandard",
+            isCredit: false,
+          },
 ];
 
-users_services.forEach(function (i) {
-  db.collection("users_services")
+userssServices.forEach(function (i) {
+  db.collection("userssServices")
     .add({
       id: i.id,
       idUser: i.idUser,
@@ -1697,8 +1836,7 @@ users_services.forEach(function (i) {
       idService: i.idService,
       date: i.date,
     })
-    .then(function (doc) {
-    })
+    .then(function (doc) {})
     .catch(function (error) {
       console.error("Error: ", error);
     });
@@ -1715,8 +1853,7 @@ providers.forEach(function (i) {
       providesCard: i.providesCard,
       showOnCarousel: i.showOnCarousel,
     })
-    .then(function (doc) {
-    })
+    .then(function (doc) {})
     .catch(function (error) {
       console.error("Error: ", error);
     });
@@ -1740,8 +1877,7 @@ users.forEach(function (i) {
       homeOwner: i.homeOwner,
       carOwner: i.carOwner,
     })
-    .then(function (doc) {
-    })
+    .then(function (doc) {})
     .catch(function (error) {
       console.error("Error: ", error);
     });
@@ -1755,8 +1891,7 @@ services.forEach(function (i) {
       image: i.image,
       description: i.description,
     })
-    .then(function (doc) {
-    })
+    .then(function (doc) {})
     .catch(function (error) {
       console.error("Error: ", error);
     });

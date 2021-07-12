@@ -1,7 +1,13 @@
 .service-card {
-  padding: 5px;
   border-style: solid;
-  border: black;
-  border-color: #512DA8;
-  border-width: 50px;
+  border: 1px solid #512DA8;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  background-color: #D1C4E9;
+}
+
+.service-card-body {
+  margin: 0;
+  padding: 0;
 }

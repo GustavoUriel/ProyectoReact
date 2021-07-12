@@ -2,11 +2,18 @@
 @import './_generals'; 
 
 .service-card {
-    padding: 5px;
     border-style: solid;
-    border:black;
-    border-color:  $back_Dark;
-    border-width: 50px;
+    border: 1px solid $back_Dark;
+    border-radius: 5px;
+    margin:5px;
+    padding: 5px;
+    background-color: $back_White;
+}
+  
+  
+.service-card-body {
+    margin:0;
+    padding: 0;
 }
   
   

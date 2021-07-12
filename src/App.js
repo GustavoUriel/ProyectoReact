@@ -16,7 +16,7 @@ import React, { useEffect, useState } from "react";
 import { useLocalContext } from './components/Context';
 
 function App() {
-  const { selectUser, listUserServices, addUserService, removeUserService, listServices, listProviders, listUserData, listUsers, doneLoading
+  const { selectUser, listUserServices, addUserService, removeUserService, listServices, listProviders, listUserInfo, listUsers, doneLoading
   } = useLocalContext();
 
   const [loaded, setLoaded] = useState(true)

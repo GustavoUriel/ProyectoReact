@@ -1,157 +1,212 @@
-import React, { useEffect, useState, useContext } from 'react';
-import { getFirestore } from '../firebase/firebase';
+import React, { useEffect, useState, useContext } from "react";
+import { getFirestore } from "../firebase/firebase";
 
 export const LocalContext = React.createContext();
 
 export function useLocalContext() {
   return useContext(LocalContext);
-};
+}
 
 export function Context({ children }) {
-
   // open remote databases
   const db = getFirestore();
-  const dbProviders = db.collection('providers');
-  const dbUsers = db.collection('users');
-  const dbServices = db.collection('services');
-  const dbUsers_services = db.collection('users_services');
+  const dbProviders = db.collection("providers");
+  const dbUsers = db.collection("users");
+  const dbServices = db.collection("services");
+  const dbuserssServices = db.collection("userssServices");
 
   // declaration of local databases
   const [providers, setProviders] = useState([]);
   const [users, setUsers] = useState([]);
   const [services, setServices] = useState([]);
-  const [users_services, setUsers_services] = useState([]);
+  const [userssServices, setAllUserssServices] = useState([]);
+
+  // Declaration of local consts
+  const [loggedUserServices, setLoggedUserServices] = useState(null); // Document of logged user info
+  const [loggedUser, setLoggedUser] = useState(null); // Document of logged user info
 
   // copy of remote databases to local databases
   useEffect(() => {
     dbProviders.get().then((querySnapshot) => {
       if (querySnapshot.size === 0) {
-        console.log('Firestores Providers vacío');
+        console.log("Firestores Providers vacío");
         setProviders([]);
       } else {
         setProviders(querySnapshot.docs.map((doc) => doc.data()));
       }
-    })
+    });
     dbUsers.get().then((querySnapshot) => {
       if (querySnapshot.size === 0) {
-        console.log('Firestores Users vacío');
+        console.log("Firestores Users vacío");
         setUsers([]);
       } else {
-        let toArrange = querySnapshot.docs.map((doc) => doc.data())
-        toArrange.sort((a, b) => a.id - b.id)
+        let toArrange = querySnapshot.docs.map((doc) => doc.data());
+        toArrange.sort((a, b) => a.id - b.id);
         setUsers(toArrange);
       }
-    })
+    });
     dbServices.get().then((querySnapshot) => {
       if (querySnapshot.size === 0) {
-        console.log('Firestores Services vacío');
+        console.log("Firestores Services vacío");
         setServices([]);
       } else {
         setServices(querySnapshot.docs.map((doc) => doc.data()));
       }
-    })
-    dbUsers_services.get().then((querySnapshot) => {
+    });
+    dbuserssServices.get().then((querySnapshot) => {
       if (querySnapshot.size === 0) {
-        console.log('Firestores Users_services vacío');
-        setUsers_services([]);
+        console.log("Firestores userssServices vacío");
+        setAllUserssServices([]);
       } else {
-        setUsers_services(querySnapshot.docs.map((doc) => doc.data()))
+        setAllUserssServices(querySnapshot.docs.map((doc) => doc.data()));
       }
-    })
+    });
   }, []);
 
-  // Declaration of local constants
-  const [loggedUser, setLoggedUser] = useState(null); // Document of logged user info
-
+  // Functions that changes the context
   const selectUser = (props) => {
-    let result
+    let result;
     if (props) {
-      result = users.find(i => i.id == props)
+      result = users.find((i) => i.id == props);
       setLoggedUser(result);
-      return result
+      loadServicesOfSelectedUser();
+      return result;
     }
-  }
-
-  const listUserServices = (props) => {
-    if (loggedUser) {
-      let result
-      result = users_services.filter(i => i.idUser == loggedUser.id)
-      console.log('user services', result)
-      return result
-    }
-  }
-
+  };
   const addUserService = (props) => {
     if (props.idUser && props.idService && props.idProvider && loggedUser) {
-      let result
+      let result;
       const doc = {
-        id: 1 + Math.max.apply(Math, users_services.map((i) => { return i.id })),
+        id:
+          1 +
+          Math.max.apply(
+            Math,
+            userssServices.map((i) => {
+              return i.id;
+            })
+          ),
         idUser: loggedUser.id,
         idProvider: props.idProvider,
         idService: props.idService,
         fecha: Date.now(),
       };
-      result = users_services.push(doc)
-      return result
+      result = userssServices.push(doc);
+      return result;
     }
-  }
-
+  };
   const removeUserService = (props) => {
-    console.log ('props', props)
-    console.log ('loggedUser', loggedUser)
-    console.log ('props && loggedUser', props && loggedUser)
     if (props && loggedUser) {
-      console.log('user services'.users_services)
-      let result
-      result = users_services.filter(i => (i.id != props)      )
-      setUsers_services(result)
-      console.log('despues de borrar'.return)
-      return result
+      let result;
+      result = userssServices.filter((i) => i.id != props);
+      setAllUserssServices(result);
+      return result;
     }
-  }
+  };
+  const loadServicesOfSelectedUser = () => {
+    let result;
+    let tempArray;
+    if (loggedUser) {
+      tempArray = userssServices.filter((i) => i.idUser == loggedUser.id);
 
+      result = tempArray.sort((a, b) => a.date < b.date);
+      setLoggedUserServices(result);
+      return result;
+    }
+  };
+  // functions that list general data
+  const doneLoading = () => {
+    // This one I wrote, and works, but is now deprecated
+    return providers && users && services && userssServices;
+  };
+  const listUsers = (props) => {
+    let result, tempArray;
+    tempArray = users;
+    result = tempArray.sort((a, b) => a.id > b.id);
+    return result, tempArray;
+  };
   const listServices = () => {
-    let result
-    result = services;
+    let result, tempArray;
+    tempArray = services;
+    result = tempArray.sort((a, b) => a.name > b.name);
     return result;
-  }
+  };
   const listProviders = () => {
-    let result
-    result = providers;
+    let result, tempArray;
+    tempArray = providers;
+    result = tempArray.sort((a, b) => a.name > b.name);
     return result;
-  }
-  const listUserData = (props) => {
+  };
+
+  // functions that list user specific data
+  const listUserInfo = (props) => {
+    // Ok, this one also sets the user, but it is not used
     let result;
     if (!props) {
-      result = loggedUser
-      return result
-    }
-    else {
-      let result
-      result = users.find(i => i.id == props)
+      result = loggedUser;
+      return result;
+    } else {
+      let result;
+      result = users.find((i) => i.id == props);
       setLoggedUser(result);
       setLoggedUser(result);
-      return result
+      return result;
     }
-  }
+  };
+  const listUserServices = (props) => {
+    if (loggedUserServices) {
+      return loggedUserServices;
+    }
+  };
+  const listUserUniqueServices = (props) => {
+    if (loggedUser && loggedUserServices) {
+      let result;
+      result = services.filter((i) => {
+        let tempArray = loggedUserServices.filter((x) => x.idService == i.id);
+        return !(tempArray.length == 0);
+      });
+      return result;
+    }
+  };
+  const listUserUniqueProviders = (props) => {
+    if (loggedUser && loggedUserServices) {
+      let result;
+      result = providers.filter((i) => {
+        let tempArray = loggedUserServices.filter((x) => x.idProvider == i.id);
+        return !(tempArray.length == 0);
+      });
+      return result;
+    }
+  };
 
-  const listUsers = (props) => {
-    let result
-    result = users;
-    return result;
-  }
+  const howManyOfThisProvider = (props) => {
+    if (loggedUser && loggedUserServices) {
+      return loggedUserServices.filter((i) => i.idProvider == props).length;
+    }
+  };
 
-  const doneLoading = () => {
-    console.log('pro us ser usser', providers, users, services, users_services)
-    return (providers && users && services && users_services)
-  }
+  const howManyOfThisService = (props) => {
+    if (loggedUser && loggedUserServices) {
+      return loggedUserServices.filter((i) => i.idService == props).length;
+    }
+  };
 
+  // The composition of the CONTEXT
   const value = {
-    selectUser, listUserServices, addUserService, removeUserService, listServices, listProviders, listUserData, listUsers, doneLoading
-  }
+    selectUser,
+    listUserServices,
+    addUserService,
+    removeUserService,
+    listServices,
+    listProviders,
+    listUserInfo,
+    listUsers,
+    doneLoading,
+    listUserUniqueProviders,
+    listUserUniqueServices,
+    howManyOfThisProvider,
+    howManyOfThisService
+  };
   return (
-    <LocalContext.Provider value={value}>
-      {children}
-    </LocalContext.Provider>
-  )
+    <LocalContext.Provider value={value}>{children}</LocalContext.Provider>
+  );
 }

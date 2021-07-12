@@ -6,7 +6,6 @@ import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 export default function InsertImage(props) {
   if (!props.src) return
   let Height= props.Size;
-  console.log('Height antes',Height)
 
 
     return (

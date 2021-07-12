@@ -2,14 +2,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/AboutYou.css';
 import React, { useState, useEffect } from 'react';
 import { useLocalContext } from '../components/Context';
-import UserServicesContainer from './UserServicesContainer.js';
+import UserServicesContainer from '../components/UserServicesContainer.js';
+import Carousel from '../components/Carousel'
 
 
 export default function AboutYou() {
-  const { selectUser, listUserServices, addUserService, removeUserService, listServices, listProviders, listUserData, listUsers, doneLoading
+  const { selectUser, listUserServices, addUserService, removeUserService, listServices, listProviders, listUserInfo, listUsers, doneLoading
   } = useLocalContext();
 
-  const user = listUserData();
+  const user = listUserInfo();
   let txtFiscal,
     txtHome,
     txtCar,
@@ -35,6 +36,7 @@ export default function AboutYou() {
           : (' Y, Sh!, tu secreto está a salvo con nosotros alrededor de ' + user.incomeNotRegistered +', de ingresos no facturados ni declarados.')}
         </p>
       </div>
+      <Carousel />
       <UserServicesContainer />
     </div>)
 
