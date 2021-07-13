@@ -15,8 +15,10 @@ import {
   Accordion,
   Button,
   OverlayTrigger,
+  Modal,
 } from "react-bootstrap";
-import InsertImage from "./InsertImage";
+import CustomModal from "./CustomModal";
+import { render } from "react-dom";
 
 export default function UserService(props) {
   const {
@@ -28,7 +30,7 @@ export default function UserService(props) {
     listProviders,
     listUserInfo,
     listUsers,
-    doneLoading,
+    stillLoading,
   } = useLocalContext();
   const user = listUserInfo();
   const [open, setOpen] = useState(false);
@@ -47,17 +49,33 @@ export default function UserService(props) {
     showServices = showServices.filter((i) => i.idProvider == props.idProvider);
   }
 
-  const deleteService = (props) => {
-    removeUserService(props);
+  const deleteService = (id, txtService, txtProvider) => {
+    alert ('primerpaso')
+    render ( <CustomModal />)
+
+  };
+  /* removeUserService(id); */
+
+  const modifyService = (props) => {
+    /*  removeUserService(props); */
   };
 
   if (!showServices) {
-    return <div>No hay servicios que cumplan los parámetros enviados</div>;
+    return <div> No hay servicios que cumplan los parámetros enviados </div>;
   }
   return showServices.map((i) => {
     let docService = services.find((x) => x.id == i.idService);
     let docProvider = providers.find((x) => x.id == i.idProvider);
     let savings = Math.random() * 50;
+    let txtMoney = "";
+    let pesos = i.value;
+    {
+      docService.isCredit
+        ? pesos < 0
+          ? (txtMoney = "Tu deuda es de " + pesos + " pesos.")
+          : (txtMoney = "Tus ahorros son de " + pesos + " pesos.")
+        : (txtMoney = "Estás pagando " + pesos + " pesos por mes.");
+    }
     return (
       <div className="service-card">
         <Container fluid>
@@ -87,14 +105,16 @@ export default function UserService(props) {
             <Col md className="service-card-service">
               <h5>{docService.name}</h5>
               <p>{docService.description}</p>
-              <p>Registraste este servicio el: {i.date}</p>
+              <p className="gray-text small-text">
+                Registraste este servicio el: {i.date}
+              </p>
             </Col>
           </Row>
           <Row>
             <Col md className="service-card-proposal-button">
               {savings <= 10 ? (
                 <Button variant="primary" block>
-                  Este servicio esta optimizado. Felicitaciones!{" "}
+                  {txtMoney} Este servicio esta optimizado. Felicitaciones!{" "}
                 </Button>
               ) : (
                 <Button
@@ -103,20 +123,28 @@ export default function UserService(props) {
                   aria-expanded={open}
                   block
                 >
-                  Podés obtener hasta un {parseInt(savings)}% de ahorro {open}
+                  {txtMoney} Podés obtener hasta un {parseInt(savings)}% de
+                  ahorro {open}
                 </Button>
               )}
             </Col>
             <Col xs lg="2" className="service-card-edit-button">
-              <Button variant="outline-warning" block>
+              <Button
+                variant="outline-warning"
+                onClick={() => {
+                  modifyService(i.id);
+                }}
+                block
+              >
                 Modificar
               </Button>
             </Col>
             <Col xs lg="2" className="service-card-remove-button">
               <Button
                 onClick={() => {
-                  deleteService(i.id);
+                  deleteService(i.id, docService.name, docProvider.name);
                 }}
+                block
               >
                 Quitar
               </Button>

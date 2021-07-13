@@ -11,3 +11,11 @@
   margin: 0;
   padding: 0;
 }
+
+.gray-text {
+  color: gray;
+}
+
+.small-text {
+  font-size: small;
+}

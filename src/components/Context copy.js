@@ -28,46 +28,47 @@ export function Context({ children }) {
 
   // copy of remote databases to local databases
   useEffect(() => {
-    dbProviders.get().then((querySnapshot) => {
-      if (querySnapshot.size === 0) {
-        console.log("Firestores Providers vacío");
-        setProviders([]);
-      } else {
-        setProviders(querySnapshot.docs.map((doc) => doc.data()));
-      }
+    let promise = new Promise((resolve, reject) => {
+      dbProviders.get().then((querySnapshot) => {
+        if (querySnapshot.size === 0) {
+          console.log("Firestores Providers vacío");
+          setProviders([]);
+        } else {
+          setProviders(querySnapshot.docs.map((doc) => doc.data()));
+        }
+      });
     });
-    dbUsers.get().then((querySnapshot) => {
-      if (querySnapshot.size === 0) {
-        console.log("Firestores Users vacío");
-        setUsers([]);
-      } else {
-        let toArrange = querySnapshot.docs.map((doc) => doc.data());
-        toArrange.sort((a, b) => a.id - b.id);
-        setUsers(toArrange);
-      }
-    });
-    dbServices.get().then((querySnapshot) => {
-      if (querySnapshot.size === 0) {
-        console.log("Firestores Services vacío");
-        setServices([]);
-      } else {
-        setServices(querySnapshot.docs.map((doc) => doc.data()));
-      }
-    });
+    promise.then(
+      dbUsers.get().then((querySnapshot) => {
+        if (querySnapshot.size === 0) {
+          console.log("Firestores Users vacío");
+          setUsers([]);
+        } else {
+          let toArrange = querySnapshot.docs.map((doc) => doc.data());
+          toArrange.sort((a, b) => a.id - b.id);
+          setUsers(toArrange);
+        }
+      })
+    );
+    promise.then(
+      dbServices.get().then((querySnapshot) => {
+        if (querySnapshot.size === 0) {
+          console.log("Firestores Services vacío");
+          setServices([]);
+        } else {
+          setServices(querySnapshot.docs.map((doc) => doc.data()));
+        }
+      })
+    );
+    promise.then(
+      setTimeout(() => {
+        console.log("ups en promises", users, providers, services);
+      }, 4000)
+    );
+    promise.then(populateUserssServices(50));
+    promise.then(setIsLoading(false));
+    
   }, []);
-
-  useEffect(() => {
-    console.log("llamada useeffect");
-    if (allUserssServices.length > 0) {
-      return;
-    }
-    if (users.length * providers.length * services.length == 0) {
-      return;
-    }
-    console.log("llamada populate");
-    populateUserssServices(100);
-    console.log("vuelta de populate", loggedUserServices);
-  }, [users, providers, services]);
 
   /* {while (((users.length) * (providers.length) * (services.length)) == 0) 
   {
@@ -80,17 +81,13 @@ export function Context({ children }) {
         setAllUserssServices(querySnapshot.docs.map((doc) => doc.data()));
       }
     }); */
-
   const populateUserssServices = (props) => {
-    console.log("entro en populate", props);
-
+    console.log(users, providers, services);
     if (users.length * providers.length * services.length == 0) {
-      console.log("salgo mal");
       return;
     }
-    console.log("adentro de populate");
-    let tempArray = [];
     for (let i = 0; i < props; i++) {
+      console.log(i);
       const element = {
         id: i,
         idUser: randomUser(),
@@ -99,56 +96,41 @@ export function Context({ children }) {
         date: randomDate(),
         value: randomValue(),
       };
-
-      tempArray.push(element);
-      console.log("en ciclo de populate");
-    }
-    console.log("fuera de ciclo de populate", tempArray);
-    setAllUserssServices(tempArray);
-
-    function randomDate() {
-      return parseInt(Math.random() * 5000);
-    }
-    function randomUser() {
-      let rndIndex = parseInt(Math.random() * users.length);
-      return users[rndIndex].id;
-    }
-    function randomProvider() {
-      let rndIndex = parseInt(Math.random() * providers.length);
-      return providers[rndIndex].id;
-    }
-    function randomService() {
-      let rndIndex = parseInt(Math.random() * services.length);
-      return services[rndIndex].id;
-    }
-    function randomValue() {
-      return parseInt(Math.random() * 10000000);
+      console.log(element);
+      allUserssServices.push(element);
+      function randomDate() {
+        return parseInt(Math.random() * 5000);
+      }
+      function randomUser() {
+        let rndIndex = parseInt(Math.random() * users.length);
+        console.log("user", rndIndex, users);
+        return users[rndIndex].id;
+      }
+      function randomProvider() {
+        let rndIndex = parseInt(Math.random() * providers.length);
+        return providers[rndIndex].id;
+      }
+      function randomService() {
+        let rndIndex = parseInt(Math.random() * services.length);
+        return services[rndIndex].id;
+      }
+      function randomValue() {
+        return parseInt(Math.random() * 10000000);
+      }
     }
   };
-  const myPromise = new Promise((resolve, reject) => {
-  
-  });
-  
 
   // Functions that changes the context
   const selectUser = (props) => {
-    console.log("asdfasdf", props);
-    const promise = new Promise((resolve, reject) => {
-      console.log("1era");
-      return users.find((i) => i.id == props);
-    });
-    console.log('antes de promesa')
-    promise
-      .then((result) => {
-        console.log("2da");
-        setLoggedUser(result);
-      })
-      .then((result) => {
-        console.log("3era");
-        loadServicesOfSelectedUser();
-      });
+    console.log("ups en setusers", users, providers, services);
+    let result;
+    if (props) {
+      result = users.find((i) => i.id == props);
+      setLoggedUser(result);
+      loadServicesOfSelectedUser();
+      return result;
+    }
   };
-
   const addUserService = (props) => {
     if (props.idUser && props.idService && props.idProvider && loggedUser) {
       let result = allUserssServices;
@@ -181,17 +163,12 @@ export function Context({ children }) {
   };
   const loadServicesOfSelectedUser = () => {
     let result;
-    console.log("loadserviceusers");
     let tempArray;
     if (loggedUser) {
       tempArray = allUserssServices.filter((i) => i.idUser == loggedUser.id);
 
       result = tempArray.sort((a, b) => a.date < b.date);
-      setLoggedUserServices(result).then(() => {
-        console.log("loggedUserServices", loggedUserServices);
-        console.log("loggedUser", loggedUser);
-      });
-
+      setLoggedUserServices(result);
       return result;
     }
   };
@@ -215,7 +192,7 @@ export function Context({ children }) {
     return result;
   };
   const stillLoading = () => {
-    return isLoading;
+    return !isLoading;
   };
   // functions that list user specific data
   const listUserInfo = (props) => {

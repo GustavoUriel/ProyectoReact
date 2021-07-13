@@ -16,7 +16,7 @@ export default function UserServicesContainer() {
     listProviders,
     listUserInfo,
     listUsers,
-    doneLoading,
+    stillLoading,
     listUserUniqueProviders,
     listUserUniqueServices,
     howManyOfThisProvider,
@@ -40,14 +40,12 @@ export default function UserServicesContainer() {
   const uniqueServices = listUserUniqueServices();
 
   const handleSelectDropdownProviders = (value, text) => {
-    console.log("a cer que mandaprov", value);
     setSelectedProvider(value);
     text
       ? setTextSelectedProvider(text)
       : setTextSelectedProvider(defaultTextSelectedProvider);
   };
   const handleSelectDropdownServices = (value, text) => {
-    console.log("a cer que mandaerv", value);
     setSelectedService(value);
     text
       ? setTextSelectedService(text)
@@ -55,7 +53,6 @@ export default function UserServicesContainer() {
   };
 
   const resetFilters = () => {
-    console.log("tabiba");
     setSelectedProvider("");
     setTextSelectedProvider(defaultTextSelectedProvider);
     setSelectedService("");

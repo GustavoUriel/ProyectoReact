@@ -1,1 +1,7 @@
-/* No CSS */
+.border-rounded {
+  border-style: solid;
+  border: 1px solid #512DA8;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}

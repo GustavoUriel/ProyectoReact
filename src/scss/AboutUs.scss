@@ -1,2 +1,10 @@
-@import './_vars.scss';
-@import './_generals'; 
+@import "./_vars.scss";
+@import "./_generals";
+
+.border-rounded {
+  border-style: solid;
+  border: 1px solid $back_Dark;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
