@@ -1,32 +1,11 @@
-context
-usestate
-Router
-Popup 
+tres veces en el inicio?
 
+modal modificar servicios
+modal cargar servicios nuevos
+jumbotron
+carousel
+propuestas
+botonlogin
 
-  return (
-    <>
-      {data ? (
-        <BoxItemDetail
-          title={data.name}
-          text={data.description}
-          productId={data.id}
-          price={data.precio}
-          stock={data.stock}
-          photo={data.photo_url}
-          thumb={data.thumb}
-        />
-      ) : (
-        <Spinner animation="border" variant="warning" />
-      )}
-    </>
-  );
-}
+popups
 
-  return (
-    <OrderContext.Provider value={order}>
-      <OrderUpdateContext.Provider value={insertOrder}>
-        {children}
-      </OrderUpdateContext.Provider>
-    </OrderContext.Provider>
-  );

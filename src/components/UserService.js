@@ -130,7 +130,9 @@ export default function UserService(props) {
               id={i.id}
               date={i.date}
               service={docService.name}
-              provider={docProvider.description}
+              idService={docService.id}
+              Provider={docProvider.description}
+              idProvider={docProvider.id}
             />
             </Col>
             <Col xs lg="2" className="service-card-remove-button">
