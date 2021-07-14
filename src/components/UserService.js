@@ -18,7 +18,10 @@ import {
   Modal,
 } from "react-bootstrap";
 import CustomModal from "./CustomModal";
+import DeleteService from "./ButtonDeleteService";
 import { render } from "react-dom";
+import ButtonDeleteService from "./ButtonDeleteService";
+import ButtonModifyService from "./ButtonModifyService";
 
 export default function UserService(props) {
   const {
@@ -34,7 +37,7 @@ export default function UserService(props) {
   } = useLocalContext();
   const user = listUserInfo();
   const [open, setOpen] = useState(false);
-
+  const [showModalConfirmDelete, setShowModalConfirmDelete] = useState(false);
   if (!user) {
     return <div>Logueate para cargar tus servicios</div>;
   }
@@ -49,15 +52,8 @@ export default function UserService(props) {
     showServices = showServices.filter((i) => i.idProvider == props.idProvider);
   }
 
-  const deleteService = (id, txtService, txtProvider) => {
-    alert ('primerpaso')
-    render ( <CustomModal />)
-
-  };
-  /* removeUserService(id); */
-
   const modifyService = (props) => {
-    /*  removeUserService(props); */
+
   };
 
   if (!showServices) {
@@ -123,31 +119,27 @@ export default function UserService(props) {
                   aria-expanded={open}
                   block
                 >
-                  {txtMoney} Podés obtener hasta un {parseInt(savings)}% de
-                  ahorro {open}
+                  {txtMoney}
+                  <br />
+                  Podés obtener hasta un {parseInt(savings)}% de ahorro {open}
                 </Button>
               )}
             </Col>
             <Col xs lg="2" className="service-card-edit-button">
-              <Button
-                variant="outline-warning"
-                onClick={() => {
-                  modifyService(i.id);
-                }}
-                block
-              >
-                Modificar
-              </Button>
+              <ButtonModifyService
+              id={i.id}
+              date={i.date}
+              service={docService.name}
+              provider={docProvider.description}
+            />
             </Col>
             <Col xs lg="2" className="service-card-remove-button">
-              <Button
-                onClick={() => {
-                  deleteService(i.id, docService.name, docProvider.name);
-                }}
-                block
-              >
-                Quitar
-              </Button>
+              <ButtonDeleteService
+                id={i.id}
+                date={i.date}
+                service={docService.name}
+                provider={docProvider.description}
+              />
             </Col>
           </Row>
         </Container>

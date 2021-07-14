@@ -15,40 +15,50 @@ import {
   Accordion,
   Button,
   OverlayTrigger,
-  Modal ,
+  Modal,
 } from "react-bootstrap";
 
-
 export default function CustomModal(props) {
-  const [modalShow, setModalShow] = React.useState(false);
-  setModalShow(true)
-console.log('adentro?')
-function MyModal(props) {
+  // props
+
+  // answer: reference to object that returns the answer of the modal
+  // accepted: boolean true if accepted or false if cancelled
+  // close: reference to function to close the modal from parent
+
+  // header: strign of the header of the modal
+  // body: strign of the body of the modal
+  // footer: strign of the footer of the modal
+  // accept: strign of the accept button of the modal
+  // cancel: strign of the cancel button of the modal
+
+
+  const handleClose = () => {
+    props.close ? props.close() : this.show = false;
+  };
+
+  const handleSaveClose = () => {
+    if (props.accepted) {props.accepted = true};
+    if (props.answer) {props.answer = [2,2,5,5]}
+    handleClose();
+  };
+
   return (
-    <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
-        </Modal.Title>
+    <Modal show={true} onHide={handleClose} size="lg" centered>
+
+      hola modal
+{/*       <Modal.Header closeButton>
+        <Modal.Title>{props.header ? props.header : ""}</Modal.Title>
       </Modal.Header>
-      <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
-      </Modal.Body>
+      <Modal.Body>{props.body ? props.body : ""}</Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
+        {props.footer ? props.footer : ""}
+        <Button variant="secondary" onClick={handleClose}>
+          {props.cancel ? props.footer : "Cancelar"}
+        </Button>
+        <Button variant="primary" onClick={handleSaveClose}>
+          {props.accept ? props.footer : "Aceptar"}
+        </Button>
+      </Modal.Footer> */}
     </Modal>
   );
-}
-
 }

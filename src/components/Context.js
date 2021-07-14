@@ -25,6 +25,7 @@ export function Context({ children }) {
   const [loggedUserServices, setLoggedUserServices] = useState(null); // Document of logged user info
   const [loggedUser, setLoggedUser] = useState(null); // Document of logged user info
   const [isLoading, setIsLoading] = useState(true); // Document of logged user info
+  const [waiting, setWaiting] = useState(true); // Document of logged user info
 
   // copy of remote databases to local databases
   useEffect(() => {
@@ -57,16 +58,13 @@ export function Context({ children }) {
   }, []);
 
   useEffect(() => {
-    console.log("llamada useeffect");
     if (allUserssServices.length > 0) {
       return;
     }
     if (users.length * providers.length * services.length == 0) {
       return;
     }
-    console.log("llamada populate");
     populateUserssServices(100);
-    console.log("vuelta de populate", loggedUserServices);
   }, [users, providers, services]);
 
   /* {while (((users.length) * (providers.length) * (services.length)) == 0) 
@@ -82,13 +80,10 @@ export function Context({ children }) {
     }); */
 
   const populateUserssServices = (props) => {
-    console.log("entro en populate", props);
 
     if (users.length * providers.length * services.length == 0) {
-      console.log("salgo mal");
       return;
     }
-    console.log("adentro de populate");
     let tempArray = [];
     for (let i = 0; i < props; i++) {
       const element = {
@@ -101,9 +96,7 @@ export function Context({ children }) {
       };
 
       tempArray.push(element);
-      console.log("en ciclo de populate");
     }
-    console.log("fuera de ciclo de populate", tempArray);
     setAllUserssServices(tempArray);
 
     function randomDate() {
@@ -125,30 +118,40 @@ export function Context({ children }) {
       return parseInt(Math.random() * 10000000);
     }
   };
-  const myPromise = new Promise((resolve, reject) => {
-  
-  });
-  
 
   // Functions that changes the context
   const selectUser = (props) => {
-    console.log("asdfasdf", props);
-    const promise = new Promise((resolve, reject) => {
-      console.log("1era");
-      return users.find((i) => i.id == props);
-    });
-    console.log('antes de promesa')
-    promise
-      .then((result) => {
-        console.log("2da");
+    var result;
+    Promise.resolve()
+      .then(function () {
+        result = users.find((i) => i.id == props);
+      })
+      .then(function () {
         setLoggedUser(result);
       })
-      .then((result) => {
-        console.log("3era");
-        loadServicesOfSelectedUser();
+      .then(function () {
+        loadServicesOfSelectedUser(result, loggedUser);
       });
+    console.log("veamos", props, loggedUser, loggedUserServices);
   };
 
+  const loadServicesOfSelectedUser = () => {
+    let result;
+    let tempArray;
+    if (!loggedUser) {
+      return;
+    }
+    return Promise.resolve()
+      .then(function () {
+        tempArray = allUserssServices.filter((i) => i.idUser == loggedUser.id);
+      })
+      .then(function () {
+        result = tempArray.sort((a, b) => a.date < b.date);
+      })
+      .then(function () {
+        setLoggedUserServices(result);
+      });
+  };
   const addUserService = (props) => {
     if (props.idUser && props.idService && props.idProvider && loggedUser) {
       let result = allUserssServices;
@@ -176,22 +179,6 @@ export function Context({ children }) {
       let result;
       result = allUserssServices.filter((i) => i.id != props);
       setAllUserssServices(result);
-      return result;
-    }
-  };
-  const loadServicesOfSelectedUser = () => {
-    let result;
-    console.log("loadserviceusers");
-    let tempArray;
-    if (loggedUser) {
-      tempArray = allUserssServices.filter((i) => i.idUser == loggedUser.id);
-
-      result = tempArray.sort((a, b) => a.date < b.date);
-      setLoggedUserServices(result).then(() => {
-        console.log("loggedUserServices", loggedUserServices);
-        console.log("loggedUser", loggedUser);
-      });
-
       return result;
     }
   };

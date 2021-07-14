@@ -9,6 +9,8 @@ import AboutUs from "./AboutUs.js";
 import Contact from "./Contact.js";
 import { useLocalContext } from "../components/Context";
 import Spinner from "react-bootstrap/Spinner";
+import CustomModal from "../components/CustomModal";
+import { render } from "react-dom/cjs/react-dom.development";
 
 export default function Home() {
   const {
@@ -27,7 +29,7 @@ export default function Home() {
     howManyOfThisService,
   } = useLocalContext();
 
-
+  const [showModal, setShowModal] = useState(false);
   /* 
   {savings <= 10 ? (
     <Button variant="primary" block>
@@ -72,11 +74,11 @@ setNotLoaded(stillLoading())
           );
         })}
         <br />
-        <button onClick={() => listUserServices()}> listUserServices </button>
         <button onClick={() => listServices()}>listServices</button>
         <button onClick={() => listProviders()}> listProviders </button>
         <button onClick={() => listUserInfo()}> listUserInfo </button>
         <button onClick={() => listUsers()}>listUsers</button>
+        <h1 className="tituloSeparador">CustomModal (solo en home)</h1>
         <h1 className="tituloSeparador">Jumbotron (solo en home)</h1>
         <Jumbotron />
         <h1 className="tituloSeparador">Carousel (solo en home)</h1>
