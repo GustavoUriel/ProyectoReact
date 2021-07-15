@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/ButtonDeleteService.css";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useLocalContext } from "./Context";
+import { useServerSide } from "./ServerSide";
 import {
   Media,
   Container,
@@ -36,7 +36,7 @@ export default function ButtonDeleteService(props) {
     listUserUniqueServices,
     howManyOfThisProvider,
     howManyOfThisService,
-  } = useLocalContext();
+  } = useServerSide();
   console.log (props)
   const [showModal, setShowModal] = useState(false);
 

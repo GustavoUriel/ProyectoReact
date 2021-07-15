@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/ButtonModifyService.css";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useLocalContext } from "./Context";
+import { useServerSide } from "./ServerSide";
 import {
   Media,
   Container,
@@ -44,7 +44,7 @@ export default function ButtonModifyService(props) {
     listUserUniqueServices,
     howManyOfThisProvider,
     howManyOfThisService,
-  } = useLocalContext();
+  } = useServerSide();
 
   console.log(props);
   let id = props.id;

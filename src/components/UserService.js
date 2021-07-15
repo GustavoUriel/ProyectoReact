@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/UserService.css";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useLocalContext } from "./Context";
+import { useServerSide } from "./ServerSide";
 import {
   Media,
   Container,
@@ -34,7 +34,7 @@ export default function UserService(props) {
     listUserInfo,
     listUsers,
     stillLoading,
-  } = useLocalContext();
+  } = useServerSide();
   const user = listUserInfo();
   const [open, setOpen] = useState(false);
   const [showModalConfirmDelete, setShowModalConfirmDelete] = useState(false);

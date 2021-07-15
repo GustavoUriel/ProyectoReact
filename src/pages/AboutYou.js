@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/AboutYou.css";
 import React, { useState, useEffect } from "react";
-import { useLocalContext } from "../components/Context";
+import { useServerSide } from "../components/ServerSide";
 import UserServicesContainer from "../components/UserServicesContainer.js";
 import Carousel from "../components/Carousel";
 import { Tabs, Tab, DropdownButton, Dropdown, Collapse, Button } from "react-bootstrap";
@@ -18,7 +18,7 @@ export default function AboutYou() {
     listUserInfo,
     listUsers,
     stillLoading,
-  } = useLocalContext();
+  } = useServerSide();
   const [open, setOpen] = useState(false);
 
   const user = listUserInfo();

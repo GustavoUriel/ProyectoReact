@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/Contact.css';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-/* import { GetUsers } from '../components/Context.js';
+/* import { GetUsers } from '../components/FromServerSide.js';
 import { Card, Accordion, Button } from 'react-bootstrap';
  */
 export default function Contact() {

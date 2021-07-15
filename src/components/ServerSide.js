@@ -3,11 +3,11 @@ import { getFirestore } from "../firebase/firebase";
 
 export const LocalContext = React.createContext();
 
-export function useLocalContext() {
+export function useServerSide() {
   return useContext(LocalContext);
 }
 
-export function Context({ children }) {
+export function ServerSide({ children }) {
   // open remote databases
   const db = getFirestore();
   const dbProviders = db.collection("providers");

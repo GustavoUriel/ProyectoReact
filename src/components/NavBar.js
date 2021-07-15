@@ -33,7 +33,7 @@ function NavBar() {
               <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="/props/mortgage">Planes para vivienda</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to="/aboutYou">VOS</Nav.Link>
+            <Nav.Link as={Link} to="/aboutYou">TUS SERVICIOS</Nav.Link>
             <Nav.Link as={Link} to="/aboutUs">Nosotros</Nav.Link>
             <Nav.Link as={Link} to="/contact">Contanos algo</Nav.Link>
             <Nav.Link as={Link} to="/salaries">Comparativas de sueldos</Nav.Link>

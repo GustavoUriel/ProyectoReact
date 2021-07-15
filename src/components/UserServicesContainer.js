@@ -4,7 +4,7 @@ import React, { useEffect, useState, useContext } from "react";
 import UserService from "./UserService";
 import { useParams } from "react-router-dom";
 import { Tabs, Tab, DropdownButton, Dropdown } from "react-bootstrap";
-import { useLocalContext } from "./Context";
+import { useServerSide } from "./ServerSide";
 
 export default function UserServicesContainer() {
   const {
@@ -21,7 +21,7 @@ export default function UserServicesContainer() {
     listUserUniqueServices,
     howManyOfThisProvider,
     howManyOfThisService,
-  } = useLocalContext();
+  } = useServerSide();
 
   var defaultTextSelectedProvider =
     "SELECCIONE UN PROVEEDOR DE SERVICIO PARA FILTRAR";

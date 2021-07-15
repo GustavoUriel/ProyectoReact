@@ -1,11 +1,13 @@
 tres veces en el inicio?
 
+update listado de servicios al ABM
 modal modificar servicios
 modal cargar servicios nuevos
 jumbotron
 carousel
 propuestas
 botonlogin
+mostrar fecha registro en el listado
 
 popups
 

@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Context } from './components/Context.js'
+import { ServerSide } from './components/ServerSide.js'
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Context>
+    <ServerSide>
       <App />
-    </Context>
+    </ServerSide>
   </React.StrictMode>,
   document.getElementById('root')
 );

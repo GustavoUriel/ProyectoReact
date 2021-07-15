@@ -13,11 +13,11 @@ import NotFound from './pages/NotFound';
 import BannerStatistics from './components/BannerStatistics.js'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import React, { useEffect, useState } from "react";
-import { useLocalContext } from './components/Context';
+import { useServerSide } from './components/ServerSide';
 
 function App() {
   const { selectUser, listUserServices, addUserService, removeUserService, listServices, listProviders, listUserInfo, listUsers, stillLoading
-  } = useLocalContext();
+  } = useServerSide();
 
   const [loaded, setLoaded] = useState(true)
 
