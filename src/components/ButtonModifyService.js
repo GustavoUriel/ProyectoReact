@@ -25,7 +25,7 @@ import {
   Form,
   Dropdown,
 } from "react-bootstrap";
-/* import FloatingLabel from "react-bootstrap/FloatingLabel";  //console.log(VER COMO HACER) */
+/* import FloatingLabel from "react-bootstrap/FloatingLabel"; */
 import { render } from "react-dom";
 import CustomModal from "./CustomModal";
 
@@ -46,8 +46,7 @@ export default function ButtonModifyService(props) {
     howManyOfThisService,
   } = useServerSide();
 
-  console.log(props);
-  let id = props.id;
+    let id = props.id;
   let date = props.date;
   let service = props.service;
   let idService = props.idService;
@@ -85,7 +84,7 @@ export default function ButtonModifyService(props) {
     setShow(true);
   };
   const handleSave = () => {
-    console.log("modificaste el sercvic");
+
     setShow(false);
   };
 

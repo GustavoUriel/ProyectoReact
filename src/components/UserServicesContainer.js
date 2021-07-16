@@ -23,6 +23,7 @@ export default function UserServicesContainer() {
     howManyOfThisService,
   } = useServerSide();
 
+ 
   var defaultTextSelectedProvider =
     "SELECCIONE UN PROVEEDOR DE SERVICIO PARA FILTRAR";
   var defaultTextSelectedService =
@@ -137,7 +138,10 @@ export default function UserServicesContainer() {
           esta pestaña está vacía.
         </Tab>
       </Tabs>
-      <UserService idProvider={selectedProvider} idService={selectedService} />
+      <UserService
+        idProvider={selectedProvider}
+        idService={selectedService}
+      />
     </div>
   );
 }

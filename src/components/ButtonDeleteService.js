@@ -37,17 +37,18 @@ export default function ButtonDeleteService(props) {
     howManyOfThisProvider,
     howManyOfThisService,
   } = useServerSide();
-  console.log (props)
   const [showModal, setShowModal] = useState(false);
 
   const [show, setShow] = useState(false);
-
+  const update = props.update;
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
   const handleDelete = () => {
-    console.log(props.id)
-    removeUserService(props.id)
+    console.log("propsid dentro de handledelete", props.id);
+    removeUserService(props.id);
     setShow(false);
+    update();
   };
 
   return (
@@ -61,11 +62,12 @@ export default function ButtonDeleteService(props) {
         </Modal.Header>
         <Modal.Body>
           Seguro desea eliminar el servicio <b>{props.service}</b> <br />
-          De <b>{props.provider}</b><br />
+          De <b>{props.provider}</b>
+          <br />
           Que registraste el <b>{props.date}</b> ?
         </Modal.Body>
         <Modal.Body>
-        <b>Esto no se puede deshacer, aunque podés volver a registrarlo</b>
+          <b>Esto no se puede deshacer, aunque podés volver a registrarlo</b>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>

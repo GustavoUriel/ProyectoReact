@@ -37,11 +37,11 @@ export default function UserService(props) {
   } = useServerSide();
   const user = listUserInfo();
   const [open, setOpen] = useState(false);
+  const [modified, setModified] = useState(false);
   const [showModalConfirmDelete, setShowModalConfirmDelete] = useState(false);
-  if (!user) {
-    return <div>Logueate para cargar tus servicios</div>;
-  }
-
+  /*   useEffect(() => {
+    setModified(false);
+  }, [modified]); */
   var showServices = listUserServices();
   const services = listServices();
   const providers = listProviders();
@@ -51,11 +51,17 @@ export default function UserService(props) {
   if (props.idProvider) {
     showServices = showServices.filter((i) => i.idProvider == props.idProvider);
   }
+  if (!user) {
+    return <div>Logueate para cargar tus servicios</div>;
+  }
 
-  const modifyService = (props) => {
+  if (modified) {
+    setModified(false);
+  }
 
-  };
-
+  function update() {
+    setModified(true);
+  }
   if (!showServices) {
     return <div> No hay servicios que cumplan los parámetros enviados </div>;
   }
@@ -127,16 +133,18 @@ export default function UserService(props) {
             </Col>
             <Col xs lg="2" className="service-card-edit-button">
               <ButtonModifyService
-              id={i.id}
-              date={i.date}
-              service={docService.name}
-              idService={docService.id}
-              Provider={docProvider.description}
-              idProvider={docProvider.id}
-            />
+                update={update}
+                id={i.id}
+                date={i.date}
+                service={docService.name}
+                idService={docService.id}
+                Provider={docProvider.description}
+                idProvider={docProvider.id}
+              />
             </Col>
             <Col xs lg="2" className="service-card-remove-button">
               <ButtonDeleteService
+                update={update}
                 id={i.id}
                 date={i.date}
                 service={docService.name}

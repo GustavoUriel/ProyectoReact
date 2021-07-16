@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <div>
-     <h5> PRIMERO LEÉ ESTO. DESPUÉS APRETÁ F5 Y FIJATE LO QUE TE DIGO ABAJO</h5>
+     <h5> HOLA BELÉN, GRACIAS POR VER EL CÓDIGO. PRIMERO LEÉ ESTO. DESPUÉS APRETÁ F5 Y FIJATE LO QUE TE DIGO ABAJO</h5>
 ABRÍ LA CONSOLA Y APRETÁ LAS TRES VECES EL MISMO NÚMERO DE USUARIO EN LOS BOTONES DE NÚMERO DEL JUMBOTRON. <br />
 Cuando apretás hace console log([string del id de usuario], [objeto usuario], [array de servicios de ese usuario]),<br />
   Fijate que a la primera vez, sólo te muestra el id de usuario, y los otros dos objetos son undefined, <br />
@@ -41,8 +41,8 @@ Cuando apretás hace console log([string del id de usuario], [objeto usuario], [
   Si apretás un usuario diferente, hace lo mismo, sólo que en vez de undefined te da el usuario que estaba cargado antes.<br />
   El código está en src/logic/ServerSide línea 123. Ahí te detallo en un comentario lo que creo que es el problema.<br />
   <br />
-  Después de seleccionar (3 veces seguidas) un usuario, andá a la pestaña TUS SERVICIOS. Ahí tengo la otra consulta.
-
+  Después de seleccionar (3 veces seguidas) un usuario, andá a la pestaña TUS SERVICIOS. Ahí tengo la otra consulta.<br />
+  POR FAVOR, TAMBIÉN ME AYUDARÍA MUCHÍSIMO QUE ME DIGAS CÓMO ORDENAR Y LIMPIAR EL CÓDIGO
       <Jumbotron />
       <Carousel />
     </div>

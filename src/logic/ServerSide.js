@@ -81,7 +81,6 @@ export function ServerSide({ children }) {
     }); */
 
   const populateUserssServices = (props) => {
-
     if (users.length * providers.length * services.length == 0) {
       return;
     }
@@ -136,7 +135,7 @@ export function ServerSide({ children }) {
         setLoggedUser(result);
       })
       .then(function () {
-        loadServicesOfSelectedUser(result, loggedUser);
+        loadServicesOfSelectedUser();
       });
     console.log("veamos", props, loggedUser, loggedUserServices);
   };
@@ -147,22 +146,13 @@ export function ServerSide({ children }) {
     if (!loggedUser) {
       return;
     }
-    return Promise.resolve()
-      .then(function () {
-        tempArray = allUserssServices.filter((i) => i.idUser == loggedUser.id);
-      })
-      .then(function () {
-        result = tempArray.sort((a, b) => a.date < b.date);
-      })
-      .then(function () {
-        setLoggedUserServices(result);
-      });
+    tempArray = allUserssServices.filter((i) => i.idUser == loggedUser.id);
+    result = tempArray.sort((a, b) => a.date < b.date);
+    setLoggedUserServices(result);
   };
 
-
-  
   const addUserService = (props) => {
-    if (props.idUser && props.idService && props.idProvider && loggedUser) {
+    if (props.idUser && props.idService && props.idProvider) {
       let result = allUserssServices;
       const doc = {
         id:
@@ -180,14 +170,21 @@ export function ServerSide({ children }) {
       };
       result.push(doc);
       setAllUserssServices(result);
+      loadServicesOfSelectedUser();
       return allUserssServices;
     }
   };
   const removeUserService = (props) => {
     if (props && loggedUser) {
       let result;
+      console.log("props", props);
+      console.log("allUserssServices", allUserssServices);
       result = allUserssServices.filter((i) => i.id != props);
-      setAllUserssServices(result);
+      setAllUserssServices(result)
+      console.log("allUserssServices", allUserssServices);
+      loadServicesOfSelectedUser();
+      console.log("loggedUserServices", loggedUserServices);
+
       return result;
     }
   };
