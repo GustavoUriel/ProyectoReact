@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/ButtonDeleteService.css";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useServerSide } from "./ServerSide";
+import { useServerSide } from "../logic/ServerSide";
 import {
   Media,
   Container,
@@ -45,6 +45,7 @@ export default function ButtonDeleteService(props) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleDelete = () => {
+    console.log(props.id)
     removeUserService(props.id)
     setShow(false);
   };

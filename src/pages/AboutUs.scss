@@ -1,6 +1,9 @@
+@import "../scss/generals.scss";
+@import "../scss/vars.scss";
+
 .border-rounded {
   border-style: solid;
-  border: 1px solid #512DA8;
+  border: 1px solid $back_Dark;
   border-radius: 5px;
   margin: 5px;
   padding: 5px;
@@ -8,7 +11,7 @@
 
 .border-unrounded {
   border-style: solid;
-  border: 1px solid #512DA8;
+  border: 1px solid $back_Dark;
   border-radius: 5px;
   margin: 5px;
   padding: 5px;

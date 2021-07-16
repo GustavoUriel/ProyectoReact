@@ -4,7 +4,7 @@ import React, { useEffect, useState, useContext } from "react";
 import UserService from "./UserService";
 import { useParams } from "react-router-dom";
 import { Tabs, Tab, DropdownButton, Dropdown } from "react-bootstrap";
-import { useServerSide } from "./ServerSide";
+import { useServerSide } from "../logic/ServerSide";
 
 export default function UserServicesContainer() {
   const {

@@ -1,3 +1,4 @@
+import { beforeMain } from "@popperjs/core";
 import React, { useEffect, useState, useContext } from "react";
 import { getFirestore } from "../firebase/firebase";
 
@@ -94,7 +95,6 @@ export function ServerSide({ children }) {
         date: randomDate(),
         value: randomValue(),
       };
-
       tempArray.push(element);
     }
     setAllUserssServices(tempArray);
@@ -118,8 +118,14 @@ export function ServerSide({ children }) {
       return parseInt(Math.random() * 10000000);
     }
   };
+  //Functions that changes the context
 
-  // Functions that changes the context
+  // Lo que me parece que pasa es que ejecuta las tres sentencias a la vez.
+  // Entonces la primera vez, la primer sentencia funciona, pero la segunda y la tercera no, porque todavía aplicó la primera
+  // Lo mismo la segunda vez que apretás el botón, pero cuando se ejecuta la segunda sentencia,
+  // ya tenía la respuesta de la pasada anterior.
+  // Entonces recién a la tercer pasada se ejecuta correctamente la tercer sentencia, que utiliza el resultado de la segunda.
+  // Probé hacerlo así como está ahora, con una promise, pero igual no funciona.
   const selectUser = (props) => {
     var result;
     Promise.resolve()
@@ -152,6 +158,9 @@ export function ServerSide({ children }) {
         setLoggedUserServices(result);
       });
   };
+
+
+  
   const addUserService = (props) => {
     if (props.idUser && props.idService && props.idProvider && loggedUser) {
       let result = allUserssServices;

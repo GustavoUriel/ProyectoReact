@@ -1,0 +1,14 @@
+@import "../scss/vars.scss";
+@import "../scss/generals.scss";
+
+.jumbotron-container {
+    border-style: solid;
+    border: 1px solid $back_Dark;
+    border-radius: 5px;
+    margin:5px;
+    padding: 5px;
+    background-color: $back_Light;
+    ;
+}
+  
+  

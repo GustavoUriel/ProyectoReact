@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/ButtonModifyService.css";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useServerSide } from "./ServerSide";
+import { useServerSide } from "../logic/ServerSide";
 import {
   Media,
   Container,

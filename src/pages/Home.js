@@ -7,7 +7,7 @@ import User from "./AboutYou.js";
 import UserServicesContainer from "../components/UserServicesContainer.js";
 import AboutUs from "./AboutUs.js";
 import Contact from "./Contact.js";
-import { useServerSide } from "../components/ServerSide";
+import { useServerSide } from "../logic/ServerSide";
 import Spinner from "react-bootstrap/Spinner";
 import CustomModal from "../components/CustomModal";
 import { render } from "react-dom/cjs/react-dom.development";
@@ -31,30 +31,25 @@ export default function Home() {
 
   return (
     <div>
-      Seleccione un usuario:
-      {listUsers().map((i) => {
-        return (
-          <button
-            onClick={() => {
-              selectUser("" + i.id);
-            }}
-          >
-            {i.id}
-          </button>
-        );
-      })}
-      <br />
-      <button onClick={() => listServices()}>listServices</button>
-      <button onClick={() => listProviders()}> listProviders </button>
-      <button onClick={() => listUserInfo()}> listUserInfo </button>
-      <button onClick={() => listUsers()}>listUsers</button>
-      <h1 className="tituloSeparador">Jumbotron (solo en home)</h1>
+     <h5> PRIMERO LEÉ ESTO. DESPUÉS APRETÁ F5 Y FIJATE LO QUE TE DIGO ABAJO</h5>
+ABRÍ LA CONSOLA Y APRETÁ LAS TRES VECES EL MISMO NÚMERO DE USUARIO EN LOS BOTONES DE NÚMERO DEL JUMBOTRON. <br />
+Cuando apretás hace console log([string del id de usuario], [objeto usuario], [array de servicios de ese usuario]),<br />
+  Fijate que a la primera vez, sólo te muestra el id de usuario, y los otros dos objetos son undefined, <br />
+  A la segunda vez, ya te cargó el objeto usuario, pero el array de servicios sigue undefined.<br />
+  Recién a la tercera vez que apretás un usuario, se carga el array de servicios contratados de ese usuario.<br />
+  No es una cuestión de esperar, es necesario apretar 3 veces.<br />
+  Si apretás un usuario diferente, hace lo mismo, sólo que en vez de undefined te da el usuario que estaba cargado antes.<br />
+  El código está en src/logic/ServerSide línea 123. Ahí te detallo en un comentario lo que creo que es el problema.<br />
+  <br />
+  Después de seleccionar (3 veces seguidas) un usuario, andá a la pestaña TUS SERVICIOS. Ahí tengo la otra consulta.
+
       <Jumbotron />
-      <h1 className="tituloSeparador">Carousel (solo en home)</h1>
       <Carousel />
-      <h1 className="tituloSeparador">Contacto</h1>
-      <Contact />
-      <h1 className="tituloSeparador">Pie de página</h1>
     </div>
   );
 }
+
+{/* <button onClick={() => listServices()}>listServices</button>
+<button onClick={() => listProviders()}> listProviders </button>
+<button onClick={() => listUserInfo()}> listUserInfo </button>
+<button onClick={() => listUsers()}>listUsers</button> */}
